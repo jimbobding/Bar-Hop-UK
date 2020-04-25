@@ -1,11 +1,8 @@
-
-
-
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById("mapTest"), {
     center: { lat: 53.4808, lng: -2.2426 },
     zoom: 13,
-    mapTypeId: "roadmap",
+    mapTypeId: "terrain",
   });
   //I set variables for each of the breweries that i will be using in my tour,
   //so they can be re-called with out typing out the co-ordinates each time//
@@ -14,16 +11,40 @@ function initAutocomplete() {
   let pamona = { lat: 53.48892, lng: -2.25118 };
   let shindigger = { lat: 53.47779, lng: -2.308078 };
 
-  var flightPlanCoordinates = [cloud, track, pamona, shindigger];
-  var flightPath = new google.maps.Polyline({
-    path: flightPlanCoordinates,
-    geodesic: true,
-    strokeColor: "#FF300",
-    strokeOpacity: 1.0,
-    strokeWeight: 2,
+  var directionsService = new google.maps.DirectionsService();
+  var directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
+
+
+  var lineSymbol = {
+    path: google.maps.SymbolPath.CIRCLE,
+    scale: 8,
+    strokeColor: "#393",
+  };
+
+  var line = new google.maps.Polyline({
+    path: [cloud, track, pamona, shindigger],
+    icons: [
+      {
+        icon: lineSymbol,
+        offset: "100%",
+      },
+    ],
+    map: map,
   });
 
-  flightPath.setMap(map);
+  animateCircle(line);
+
+  function animateCircle(line) {
+    var count = 0;
+    window.setInterval(function () {
+      count = (count + 0.5) % 200;
+
+      var icons = line.get("icons");
+      icons[0].offset = count / 2 + "%";
+      line.set("icons", icons);
+    }, 20);
+  }
 
   var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -42,65 +63,32 @@ function initAutocomplete() {
   });
 
 
+        var directionsService = new google.maps.DirectionsService();
+        var directionsRenderer = new google.maps.DirectionsRenderer();
+       
+        directionsRenderer.setMap(map);
 
-     
- 
-        // calculate distance
-        function calculateDistance() {
-            var origin = cloud.val();
-            var destination = shindigger.val();
-            var service = new google.maps.DistanceMatrixService();
-            service.getDistanceMatrix(
-                {
-                    origins: [origin],
-                    destinations: [destination],
-                    travelMode: google.maps.TravelMode.DRIVING,
-                    unitSystem: google.maps.UnitSystem.IMPERIAL, // miles and feet.
-                    // unitSystem: google.maps.UnitSystem.metric, // kilometers and meters.
-                    avoidHighways: false,
-                    avoidTolls: false
-                }, callback);
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsRenderer);
+        };
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+      }
 
-            function newFunction() {
-                return $('#destination');
-            }
-        }
-        // get distance results
-        function callback(response, status) {
-            if (status != google.maps.DistanceMatrixStatus.OK) {
-                $('#result').html(err);
-            } else {
-                var origin = response.originAddresses[0];
-                var destination = response.destinationAddresses[0];
-                if (response.rows[0].elements[0].status === "ZERO_RESULTS") {
-                    $('#result').html("Better get on a plane. There are no roads between "  + origin + " and " + destination);
-                } else {
-                    var distance = response.rows[0].elements[0].distance;
-                    var duration = response.rows[0].elements[0].duration;
-                    console.log(response.rows[0].elements[0].distance);
-                    var distance_in_kilo = distance.value / 1000; // the kilom
-                    var distance_in_mile = distance.value / 1609.34; // the mile
-                    var duration_text = duration.text;
-                    var duration_value = duration.value;
-                    $('#in_mile').text(distance_in_mile.toFixed(2));
-                    $('#in_kilo').text(distance_in_kilo.toFixed(2));
-                    $('#duration_text').text(duration_text);
-                    $('#duration_value').text(duration_value);
-                    $('#from').text(origin);
-                    $('#to').text(destination);
-                }
-            }
-        }
-        // print results on submit the form
-        $('#distance_form').submit(function(e){
-            e.preventDefault();
-            calculateDistance();
-        });
+      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+        directionsService.route(
+            {
+              origin: {query: document.getElementById('start').value},
+              destination: {query: document.getElementById('end').value},
+              travelMode: 'DRIVING'
+            },
+            function(response, status) {
+              if (status === 'OK') {
+                directionsRenderer.setDirections(response);
+              } else {
+                window.alert('Directions request failed due to ' + status);
+              }
+            });
+      }
 
 
-      
-    }
-
-function newFunction_1(newFunction) {
-    return newFunction();
-}
