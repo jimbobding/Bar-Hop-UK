@@ -49,49 +49,96 @@
         </span>
       </div>
     </nav>
-   
-  
+
     <div id="mapManchester"></div>
     <div id="right-panel">
-    <div>
-    <b>Start:</b>
-    <select id="start">
-      <option value="Halifax, NS">Halifax, NS</option>
-      <option value="Boston, MA">Boston, MA</option>
-      <option value="New York, NY">New York, NY</option>
-      <option value="Miami, FL">Miami, FL</option>
-    </select>
-    <br>
-    <b>Waypoints:</b> <br>
-    <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br>
-    <select multiple id="waypoints">
-      <option value="montreal, quebec">Montreal, QBC</option>
-      <option value="toronto, ont">Toronto, ONT</option>
-      <option value="chicago, il">Chicago</option>
-      <option value="winnipeg, mb">Winnipeg</option>
-      <option value="fargo, nd">Fargo</option>
-      <option value="calgary, ab">Calgary</option>
-      <option value="spokane, wa">Spokane</option>
-    </select>
-    <br>
-    <b>End:</b>
-    <select id="end">
-      <option value="Vancouver, BC">Vancouver, BC</option>
-      <option value="Seattle, WA">Seattle, WA</option>
-      <option value="San Francisco, CA">San Francisco, CA</option>
-      <option value="Los Angeles, CA">Los Angeles, CA</option>
-    </select>
-    <br>
-      <input type="submit" id="submit">
-    </div>
-    <div id="directions-panel"></div>
+      <div>
+        <b>Start:</b>
+        <select id="start">
+          <option
+            value="Unit 9 Piccadilly Trading Estate,
+Manchester, M1 2NP"
+            >Cloud Water</option
+          >
+          <option
+            value="Track Brewing Co 
+Unit 5 
+Sheffield Street 
+Manchester 
+M1 2ND "
+            >Track</option
+          >
+          <option
+            value="33 Waybridge Enterprise Centre, Daniel Adamson Rd, Salford M50 1DS"
+            >Pamona</option
+          >
+
+          <option value="Unit 11 Springfield Ln, Manchester, Salford M3 7JQ"
+            >Shindigger</option
+          >
+        </select>
+        <br />
+        <b>Waypoints:</b> <br />
+        <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br />
+        <select multiple id="waypoints">
+          <option
+            value="Unit 9 Piccadilly Trading Estate,
+Manchester, M1 2NP"
+            >Cloud Water</option
+          >
+          <option
+            value="Track Brewing Co 
+Unit 5 
+Sheffield Street 
+Manchester 
+M1 2ND "
+            >Track</option
+          >
+          <option
+            value="33 Waybridge Enterprise Centre, Daniel Adamson Rd, Salford M50 1DS"
+            >Pamona</option
+          >
+
+          <option value="Unit 11 Springfield Ln, Manchester, Salford M3 7JQ"
+            >Shindigger</option
+          >
+        </select>
+        <br />
+        <b>End:</b>
+        <select id="end">
+          <option
+            value="Unit 9 Piccadilly Trading Estate,
+Manchester, M1 2NP"
+            >Cloud Water</option
+          >
+          <option
+            value="Track Brewing Co 
+Unit 5 
+Sheffield Street 
+Manchester 
+M1 2ND "
+            >Track</option
+          >
+          <option
+            value="33 Waybridge Enterprise Centre, Daniel Adamson Rd, Salford M50 1DS"
+            >Pamona</option
+          >
+
+          <option value="Unit 11 Springfield Ln, Manchester, Salford M3 7JQ"
+            >Shindigger</option
+          >
+        </select>
+        <br />
+        <input type="submit" id="submit" />
+      </div>
+      <div id="directions-panel"></div>
     </div>
 
-    
-<script
-  src="https://code.jquery.com/jquery-3.5.0.js"
-  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-  crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEHs3x97gngwVn1vWAHuRHfYbZVf0scUs&libraries=places&callback=initAutocomplete"

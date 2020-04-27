@@ -2,8 +2,8 @@ function initAutocomplete() {
   var directionsService = new google.maps.DirectionsService();
   var directionsRenderer = new google.maps.DirectionsRenderer();
   var map = new google.maps.Map(document.getElementById("mapManchester"), {
-    zoom: 6,
-    center: { lat: 41.85, lng: -87.65 },
+    zoom: 11,
+    center: { lat: 53.4808, lng: -2.2426},
   });
   directionsRenderer.setMap(map);
   document.getElementById("submit").addEventListener("click", function () {
