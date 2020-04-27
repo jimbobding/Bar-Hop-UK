@@ -80,6 +80,10 @@ body {
   box-shadow: 20px 20px 50px 10px pink;
 }
 
+.card {
+margin-left: 15px;
+}
+
 /* ----------------------------------------Headings */
 
 .cities-heading {
@@ -87,13 +91,64 @@ body {
   font-size: 35px;
 }
 
+
 .cities-container {
-  padding-left: 60px;
-  padding-bottom: 30px;
+    justify-content: space-around;
+}
+ .col-cards {
+     justify-content: center;
+ }
+
+/* ----------------------------------------waypoint */
+#right-panel {
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
 }
 
-@media (max-width: 1024px) {
-    .cities-container {
-  padding-right: 200px;
+#right-panel select,
+#right-panel input {
+  font-size: 15px;
 }
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#mapWaypoint {
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  position: relative;
+  float: left;
+  box-shadow: 20px 20px 50px 10px pink;
+ 
+  
+}
+#right-panel {
+  margin: 20px;
+  border-width: 2px;
+  width: 20%;
+  height: 400px;
+  float: left;
+  text-align: left;
+  padding-top: 0;
+}
+#directions-panel {
+  margin-top: 10px;
+  background-color: #ffee77;
+  padding: 10px;
+  overflow: scroll;
+  height: 174px;
 }
