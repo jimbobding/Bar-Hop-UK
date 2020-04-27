@@ -1,94 +1,114 @@
+
+
 function initAutocomplete() {
-  var map = new google.maps.Map(document.getElementById("mapTest"), {
-    center: { lat: 53.4808, lng: -2.2426 },
-    zoom: 13,
-    mapTypeId: "terrain",
-  });
-  //I set variables for each of the breweries that i will be using in my tour,
-  //so they can be re-called with out typing out the co-ordinates each time//
-  let cloud = { lat: 53.478026, lng: -2.221592 };
-  let track = { lat: 53.477921, lng: -2.221168 };
-  let pamona = { lat: 53.48892, lng: -2.25118 };
-  let shindigger = { lat: 53.47779, lng: -2.308078 };
+        var markerArray = [];
 
-  var directionsService = new google.maps.DirectionsService();
-  var directionsRenderer = new google.maps.DirectionsRenderer();
-  directionsRenderer.setMap(map);
+        // Instantiate a directions service.
+        var directionsService = new google.maps.DirectionsService;
 
+        // Create a map and center it on Manhattan.
+        var map = new google.maps.Map(document.getElementById('mapTest'), {
+          zoom: 13,
+          center: {lat: 53.4808, lng: -2.2426}
+        });
 
-  var lineSymbol = {
-    path: google.maps.SymbolPath.CIRCLE,
-    scale: 8,
-    strokeColor: "#393",
-  };
+        // Create a renderer for directions and bind it to the map.
+        var directionsRenderer = new google.maps.DirectionsRenderer({map: map});
 
-  var line = new google.maps.Polyline({
-    path: [cloud, track, pamona, shindigger],
-    icons: [
-      {
-        icon: lineSymbol,
-        offset: "100%",
-      },
-    ],
-    map: map,
-  });
+        // Instantiate an info window to hold step text.
+        var stepDisplay = new google.maps.InfoWindow;
 
-  animateCircle(line);
-
-  function animateCircle(line) {
-    var count = 0;
-    window.setInterval(function () {
-      count = (count + 0.5) % 200;
-
-      var icons = line.get("icons");
-      icons[0].offset = count / 2 + "%";
-      line.set("icons", icons);
-    }, 20);
-  }
-
-  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-  var locations = [cloud, track, pamona, shindigger];
-
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
-
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
-
-
-        var directionsService = new google.maps.DirectionsService();
-        var directionsRenderer = new google.maps.DirectionsRenderer();
-       
-        directionsRenderer.setMap(map);
-
+        // Display the route between the initial start and end selections.
+        calculateAndDisplayRoute(
+            directionsRenderer, directionsService, markerArray, stepDisplay, map);
+        // Listen to change events from the start and end lists.
         var onChangeHandler = function() {
-          calculateAndDisplayRoute(directionsService, directionsRenderer);
+          calculateAndDisplayRoute(
+              directionsRenderer, directionsService, markerArray, stepDisplay, map);
         };
-        document.getElementById('start').addEventListener('change', onChangeHandler);
-        document.getElementById('end').addEventListener('change', onChangeHandler);
+       
+       
       }
 
-      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
-        directionsService.route(
+      function calculateAndDisplayRoute(directionsRenderer, directionsService,
+          markerArray, stepDisplay, map) {
+        // First, remove any existing markers from the map.
+        for (var i = 0; i < markerArray.length; i++) {
+          markerArray[i].setMap(null);
+        }
+
+        // Retrieve the start and end locations and create a DirectionsRequest using
+        // WALKING directions.
+        directionsService.route({
+          origin: document.getElementById('start').value,
+          destination: document.getElementById('quarter').value,
+          destination: document.getElementById('middle').value,
+           destination: document.getElementById('end').value,
+          travelMode: 'WALKING'
+        }, function(response, status) {
+          // Route the directions and pass the response to a function to create
+          // markers for each step.
+          if (status === 'OK') {
+            document.getElementById('warnings-panel').innerHTML =
+                '<b>' + response.routes[0].warnings + '</b>';
+            directionsRenderer.setDirections(response);
+            showSteps(response, markerArray, stepDisplay, map);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
+      function showSteps(directionResult, markerArray, stepDisplay, map) {
+        // For each step, place a marker, and add the text to the marker's infowindow.
+        // Also attach the marker to an array so we can keep track of it and remove it
+        // when calculating new routes.
+        var myRoute = directionResult.routes[0].legs[0];
+        for (var i = 0; i < myRoute.steps.length; i++) {
+          var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
+          marker.setMap(map);
+          marker.setPosition(myRoute.steps[i].start_location);
+          attachInstructionText(
+              stepDisplay, marker, myRoute.steps[i].instructions, map);
+        }
+      }
+
+      function attachInstructionText(stepDisplay, marker, text, map) {
+        google.maps.event.addListener(marker, 'click', function() {
+          // Open an info window when the marker is clicked on, containing the text
+          // of the step.
+          stepDisplay.setContent(text);
+          stepDisplay.open(map, marker);
+        });
+  let cloud = { lat: 53.478026, lng: -2.221592 };
+    let track = { lat: 53.477921, lng: -2.221168 };
+    let pamona = { lat: 53.48892, lng: -2.25118 };
+    let shindigger = { lat: 53.47779, lng: -2.308078 };
+    var lineSymbol = {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        strokeColor: '#393'
+    };
+    var line = new google.maps.Polyline({
+        path: [cloud, track, pamona, shindigger],
+        icons: [
             {
-              origin: {query: document.getElementById('start').value},
-              destination: {query: document.getElementById('end').value},
-              travelMode: 'DRIVING'
+                icon: lineSymbol,
+                offset: "100%",
             },
-            function(response, status) {
-              if (status === 'OK') {
-                directionsRenderer.setDirections(response);
-              } else {
-                window.alert('Directions request failed due to ' + status);
-              }
-            });
+        ],
+        map: map,
+    });
+ animateCircle(line);
+    function animateCircle(line) {
+        var count = 0;
+        window.setInterval(function () {
+            count = (count + .5) % 200;
+            var icons = line.get('icons');
+            icons[0].offset = (count / 2) + '%';
+            line.set('icons', icons);
+        }, 20);
+    }
+
       }
-
-
+    

@@ -87,3 +87,17 @@ function sendMail(contactForm) {
         </div>
       </div>
     </section>
+
+
+      <div class="card" style="width: 18rem;">
+                <img
+                  src="assets/images/manchester.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    <a href="manchester.html"> Manchester</a>
+                  </p>
+                </div>
+              </div>
