@@ -4,118 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/test.js"></script>
-
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_8FmYcOiKwGhh65a0xmExM");
+      })();
+    </script>
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cities.html">Cities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </nav>
-    <h1 id="tours">Test</h1>
-    <div class="container">
-      <div class="col"></div>
+      <div class="modal-body">
+        <section class="container-fluid">
+          <div class="row-bg-color-contact">
+            <div class="col">
+              <h3 class="contact-heading uppercase text-center">
+                Sign up for our monthly newsletter!
+              </h3>
+              <h5 class="uppercase text-center">Lets drink together!</h5>
+              <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                  <input
+                    type="text"
+                    name="name"
+                    id="fullname"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="emailaddress"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                  <textarea
+                    type="newsletter"
+                    name="newsletter"
+                    id="newsletter"
+                    class="form-control"
+                    placeholder="BEER"
+                    required
+                  ></textarea>
+                  <div class="form-row text-center">
+                    <div class="col">
+                      <button type="submit" class="btn btn-secondary">
+                        Send Project Request
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
-
-    <div id="floating-panel">
-      <b>Start: </b>
-      <select id="start">
-        <option
-          value="Unit 9 Piccadilly Trading Estate,
-Manchester, M1 2NP"
-          >Cloudwater</option
-        >
-      </select>
-
-      <b>Quarter: </b>
-      <select id="quarter">
-        <option
-          value="Track Brewing Co 
-Unit 5 
-Sheffield Street 
-Manchester 
-M1 2ND "
-          >Track</option
-        >
-      </select>
-
-      <b>Middle: </b>
-      <select id="middle">
-        <option
-          value="33 Waybridge Enterprise Centre, Daniel Adamson Rd, Salford M50 1DS"
-          >Pamona</option
-        >
-      </select>
-
-      <b>End: </b>
-      <select id="end">
-        <option value="Unit 11 Springfield Ln, Manchester, Salford M3 7JQ"
-          >Shindigger</option
-        >
-        <option value="W 49th St & 5th Ave, New York, NY 10020"
-          >Rockefeller Center</option
-        >
-        <option value="moma, New York, NY">MOMA</option>
-        <option value="350 5th Ave, New York, NY, 10118"
-          >Empire State Building</option
-        >
-        <option value="253 West 125th Street, New York, NY"
-          >Apollo Theater</option
-        >
-        <option value="1 Wall St, New York, NY">Wall St</option>
-      </select>
-    </div>
-    <div id="mapTest"></div>
-    &nbsp;
-    <div id="warnings-panel"></div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.js"
-      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEHs3x97gngwVn1vWAHuRHfYbZVf0scUs&libraries=places&callback=initAutocomplete"
-      async
-      defer
-    ></script>
+  </div>
+</div>
+       
+    
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/test.js"></script>
   </body>
 </html>
