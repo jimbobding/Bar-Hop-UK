@@ -188,3 +188,182 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer) {
 
   );
 }
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/manchester.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar w/ text</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cities.html">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </nav>
+    <h1 id="tours">Tours</h1>
+    <div class="container">
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cumque odit, libero ratione, veniam in similique, reiciendis accusamus
+          non minima nostrum rerum eveniet dolorem atque soluta ex porro
+          eligendi aperiam.
+        </p>
+      </div>
+    </div>
+    <h2>Manchester</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      recusandae dicta temporibus tempora libero. Rem iure laborum ratione
+      pariatur dolores dicta nesciunt enim! Harum sit voluptatum officiis autem
+      magnam eum? Voluptatibus earum debitis obcaecati expedita accusantium,
+      fuga perferendis temporibus possimus amet illo. Officiis sequi doloribus
+      ab repellat necessitatibus harum ipsa id dolorem repudiandae. Ad
+      dignissimos perferendis nam, iste laboriosam consectetur. Exercitationem
+      illum perspiciatis alias quia aliquid optio molestias sapiente recusandae
+      laboriosam beatae veritatis mollitia, asperiores numquam ex quos ipsum
+      similique consequuntur nesciunt minus magni nisi enim omnis. Sequi, hic
+      placeat. Sunt maiores quibusdam nesciunt similique, recusandae commodi
+      quod, laborum ipsum, error ab distinctio possimus? Deleniti pariatur
+      officia eligendi quia. Tempora voluptas ab quos nemo, temporibus alias
+      perspiciatis sed sint deleniti. Ab ut earum at molestias ea, rem aut
+      obcaecati, sapiente vitae facere repudiandae perferendis distinctio
+      architecto dolorum quo? Voluptates incidunt excepturi accusamus. Velit in
+      enim iusto est cumque, provident sit.
+    </p>
+
+    <div id="map-box">
+      <div id="mapManchester"></div>
+    </div>
+
+    
+<script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEHs3x97gngwVn1vWAHuRHfYbZVf0scUs&libraries=places&callback=initAutocomplete"
+      async
+      defer
+    ></script>
+  </body>
+</html>
+
+function initAutocomplete() {
+    var map = new google.maps.Map(document.getElementById("mapManchester"), {
+        center: { lat: 53.4808, lng: -2.2426 },
+        zoom: 13,
+        mapTypeId: "terrain",
+    });
+    //I set variables for each of the breweries that i will be using in my tour,
+    //so they can be re-called with out typing out the co-ordinates each time//
+    let cloud = { lat: 53.478026, lng: -2.221592 };
+    let track = { lat: 53.477921, lng: -2.221168 };
+    let pamona = { lat: 53.48892, lng: -2.25118 };
+    let shindigger = { lat: 53.47779, lng: -2.308078 };
+    var lineSymbol = {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        strokeColor: '#393'
+    };
+    var line = new google.maps.Polyline({
+        path: [cloud, track, pamona, shindigger],
+        icons: [
+            {
+                icon: lineSymbol,
+                offset: "100%",
+            },
+        ],
+        map: map,
+    });
+    animateCircle(line);
+    function animateCircle(line) {
+        var count = 0;
+        window.setInterval(function () {
+            count = (count + .5) % 200;
+            var icons = line.get('icons');
+            icons[0].offset = (count / 2) + '%';
+            line.set('icons', icons);
+        }, 20);
+    }
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var locations = [cloud, track, pamona, shindigger];
+    var markers = locations.map(function (location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length],
+        });
+    });
+    var markerCluster = new MarkerClusterer(map, markers, {
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+    });
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</

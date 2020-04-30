@@ -1,34 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers:100,300,400,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Bangers:100,300,400,700&display=swap");
 
 body {
-    font-family: 'Bangers', sans-serif;   
-    margin: 0;
-    padding: 0;
+  font-family: "Bangers", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 
 #beertap-pic {
- display: block;
-  height: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url("../images/beer-and-hops.webp");
-  background-position: center;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  justify-content: center;
- 
-}
-
-#offer-pic {
   background-attachment: fixed;
-  background-image: url("../images/hops.jpeg");
+  background-image: url("../images/people-drinking.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100px;
+  height: 60vh;
+  width: auto;
+  justify-content: center;
+}
+
+#beer-bottles {
+  background-attachment: fixed;
+  background-image: url("../images/beer-bottles.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
   width: auto;
   justify-content: center;
 }
@@ -36,18 +31,33 @@ body {
 /* ----------------------------------------Navbar */
 
 .nav-hop {
-    height: 80px;
-    background-color: #0E9594;
+  height: 80px;
+  background-color: #0e9594;
+  border: 2px black solid;
 }
 
 li a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #127475;
+  font-size: 20px;
+  text-decoration: none;
+  color: #127475;
 }
 
 li a:hover {
-   color: black;
+  color: black;
+}
+
+/* ----------------------------------------About */
+
+.about-container {
+  padding: 5px;
+}
+
+/* ----------------------------------------Maps */
+
+#breweries-map {
+  height: 300px;
+  border: 1px solid violet;
+  width: 80%;
 }
 
 #mapManchester {
@@ -80,10 +90,18 @@ li a:hover {
   padding-bottom: 50px;
 }
 
+.breweries-near-container {
+  padding-bottom: 50px;
+}
+
 .card-text {
   text-align: center;
   font-size: 24px;
   text-decoration: none;
+}
+
+.card-breweries-near {
+  box-shadow: 10px 10px 20px 10px black;
 }
 
 .card-london {
@@ -98,8 +116,6 @@ li a:hover {
   box-shadow: 10px 10px 20px 10px blue;
 }
 
-
-
 /* ----------------------------------------Headings */
 
 .cities-heading {
@@ -107,13 +123,18 @@ li a:hover {
   font-size: 35px;
 }
 
-.offer-heading {
+.breweries-near-heading {
   text-align: center;
 }
 
 .about-heading {
-    text-align: center;
-    font-size: 35px;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.breweries-near-container {
+  margin-bottom: 15px;
 }
 /* ----------------------------------------waypoint */
 #right-panel {
@@ -134,7 +155,6 @@ li a:hover {
 #right-panel i {
   font-size: 12px;
 }
-
 
 #mapWaypoint {
   height: 250px;
@@ -165,8 +185,109 @@ li a:hover {
 
 /* ----------------------------------------Modal */
 
-
 .modal-header {
-    font-size: 50px;
-    color: red;
+  font-size: 50px;
+  color: red;
+}
+
+/* ----------------------------------------Breweries near you  */
+
+#panel {
+  height: 100%;
+  width: null;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.open {
+  width: 250px;
+}
+
+/* Styling for place details */
+.hero {
+  width: 100%;
+  height: auto;
+  max-height: 166px;
+  display: block;
+}
+
+.place,
+p {
+  font-family: "open sans", arial, sans-serif;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.details {
+  color: darkslategrey;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-london {
+    box-shadow: transparent;
+  }
+
+  .card-manchester {
+    box-shadow: 0;
+  }
+
+  .card-liverpool {
+    box-shadow: 0;
+  }
+}
+
+/* ----------------------------------------Newsletter */
+
+a .newsletter {
+  font-size: 50px;
+  color: red;
+}
+
+.newsletter-container {
+  text-align: center;
+}
+
+.fa-newspaper {
+  color: black;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.newsletter {
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+.newsletter:hover  {
+    transform: scale(2);
+}
+
+.about-container {
+    border: 1px solid black;
+    background-color: red;
+}
+
+/* ----------------------------------------Footer */
+
+.footer {
+  width: 100%;
+  bottom: 0px;
+  height: 70px;
+  background-color: #0e9594;
+  border: 2px black solid;
+  z-index: 3;
+  padding-left: -15px;
+}
+
+.newsletter-container {
+    padding-top: 50px;
+    padding-bottom: 25px;
 }

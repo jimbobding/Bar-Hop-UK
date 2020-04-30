@@ -71,13 +71,13 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cities.html">Cities</a>
+            <a class="nav-link" href="#cities">Cities</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="test.html">Test</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="waypoint.html">Waypoint</a>
+            <a class="nav-link" href="#newsletter">Newsletter</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -85,9 +85,11 @@
         </span>
       </div>
     </nav>
-
-    <div id="beertap-pic"></div>
-    <div id="map"></div>
+    <div id="beertap-pic">
+      <div class="col-12">
+        <h1>Bar Hop UK</h1>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col"></div>
@@ -108,10 +110,14 @@
       </div>
     </div>
 
-    <h2 class="offer-heading">What we offer</h2>
-    <div class="container offer-container">
+    <div class="container-fluid">
+      <div id="beer-bottles"></div>
+    </div>
+
+    <h2 class="breweries-near-heading">Breweries Near You</h2>
+    <div class="container breweries-near-container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-8 d-flex">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quas
             aperiam dolorem quod? Aliquid odio quis, consequuntur suscipit
@@ -119,21 +125,39 @@
             provident tempora obcaecati.
           </p>
         </div>
+        <div class="col-12 col-md-2">
+          <div class="card card-breweries-near" style="width: 18rem;">
+            <a href="breweries-near-you.html"
+              ><img
+                src="assets/images/brewery-pic.jpg"
+                class="card-img-top"
+                alt="..."
+                height="214px;"
+            /></a>
+            <div class="card card-body">
+              <p class="card-text">
+                <a href="breweries-near-you.html">Breweries Near You</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <h2 class="cities-heading jumbotron">Cities</h2>
+    <h2 class="cities-heading jumbotron jumbotron-cities" id="cities">
+      Cities
+    </h2>
 
     <div class="container-fluid cities-container">
       <div class="row no-gutters">
         <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card-london" style="width: 18rem;">
-            <img
-              src="assets/images/London_Tower_Bridge_City.webp"
-              class="card-img-top"
-              alt="..."
-              height="214px;"
-            />
+          <div class="card card-london" style="width: 18rem;">
+            <a href="london.html"
+              ><img
+                src="assets/images/London_Tower_Bridge_City.webp"
+                class="card-img-top"
+                alt="..."
+                height="214px;"
+            /></a>
             <div class="card card-body">
               <p class="card-text">
                 <a href="london.html">London</a>
@@ -144,12 +168,13 @@
 
         <div class="col-12 col-md-4 d-flex justify-content-center">
           <div class="card card-manchester" style="width: 18rem;">
-            <img
-              src="assets/images/manchester- night.jpg"
-              class="card-img-top"
-              alt="..."
-              height="214px;"
-            />
+            <a href="manchester.html">
+              <img
+                src="assets/images/manchester- night.jpg"
+                class="card-img-top"
+                alt="..."
+                height="214px;"
+            /></a>
             <div class="card-body">
               <p class="card-text">
                 <a href="manchester.html"> Manchester</a>
@@ -167,23 +192,34 @@
                 height="214px;"
             /></a>
             <div class="card-body">
-              <p class="card-text">
-                Liverpool
-              </p>
+              <a href="liverpool.html">
+                <p class="card-text">
+                  Liverpool
+                </p></a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <a href="#signUpModal" data-toggle="modal"> Newletter</a>
 
+	<!-- /.Modal ----------------------------------->
+
+    <div class="container newsletter-container">
+      <a href="#signUpModal" data-toggle="modal"
+        ><h3 class="newsletter">
+          <i class="fas fa-newspaper"></i>Newsletter<i
+            class="fas fa-newspaper"
+          ></i></h3
+      ></a>
+    </div>
     <div
       class="modal fade"
       id="signUpModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="signUpModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
@@ -228,7 +264,7 @@
                       <textarea
                         type="newsletter"
                         name="newsletter"
-                        id="newsletter"
+                        id="signup"
                         class="form-control"
                         placeholder="BEER"
                         required
@@ -257,6 +293,31 @@
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container" id="newsletter" >
+      <div class="row">
+        <div class="col-6">
+       <p>Sign up to our monthly newsletter so we can keep you in the know about everything that is beer.
+       Bar Hop UK is free to use app with premium option that willl soon be available</p>
+        </div>
+       <div class="col-6">
+       <ul>
+       <li>Tours</li>
+       <li>Discounts</li>
+       <li>Become a beer server</li>
+       <li>Learn to home brew</li>
+       <li>Access more breweries across the UK</li>
+       <li>Discount to beer festivals and events</li>
+       </ul>
+       </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row"></div>
       </div>
     </div>
 
