@@ -4,6 +4,7 @@ body {
   font-family: "Bangers", sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 #beertap-pic {
@@ -15,6 +16,7 @@ body {
   height: 60vh;
   width: auto;
   justify-content: center;
+  position: relative;
 }
 
 #beer-bottles {
@@ -26,14 +28,46 @@ body {
   height: 40vh;
   width: auto;
   justify-content: center;
+  
+}
+
+#bar-hop-logo {
+
+    background-image: url("../images/Copy of Add a little bit of body text.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    z-index: 2;
+    margin-top:  250px;
+    margin-left: 400px;
+    position: absolute;
 }
 
 /* ----------------------------------------Navbar */
 
+img.logo {
+    height: 6rem;
+}
+
 .nav-hop {
-  height: 80px;
+  height: 5rem;
   background-color: #0e9594;
   border: 2px black solid;
+}
+
+#hop {
+background-attachment: fixed;
+  background-image: url("../images/cartoon-hop.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: auto;
+  justify-content: center;
+  z-index: 0;
 }
 
 li a {
@@ -45,28 +79,84 @@ li a {
 li a:hover {
   color: black;
 }
+/* ----------------------------------------Landing */
+.landing-container {
+   padding-top: 20px;
+}
 
 /* ----------------------------------------About */
 
 .about-container {
+  border: 1px solid black;
+  background-color: red;
   padding: 5px;
+  text-align: center;
+}
+
+/* ----------------------------------------Breweries near you  */
+
+.breweries-near-container {
+  margin-bottom: 15px;
+}
+
+#panel {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.open {
+  width: 250px;
+}
+
+/* Styling for place details */
+.hero {
+  width: 100%;
+  height: auto;
+  max-height: 166px;
+  display: block;
+}
+
+.place,
+p {
+  font-family: "open sans", arial, sans-serif;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.details {
+  color: darkslategrey;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.directions-container {
+  float: bottom;
 }
 
 /* ----------------------------------------Maps */
 
 #breweries-map {
-  height: 300px;
-  border: 1px solid violet;
-  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  width: 100%;
 }
 
 #mapManchester {
-  height: 250px;
+  height: 340px;
   border: 1px solid red;
   padding: 10px;
-  width: 100%;
+  width: 70%;
   text-align: center;
   position: relative;
+  float: left;
 }
 
 #mapLondon {
@@ -93,6 +183,8 @@ li a:hover {
 .breweries-near-container {
   padding-bottom: 50px;
 }
+
+
 
 .card-text {
   text-align: center;
@@ -129,14 +221,34 @@ li a:hover {
 
 .about-heading {
   text-align: center;
-  font-size: 35px;
+  font-size: 60px;
   padding: 10px;
 }
 
-.breweries-near-container {
-  margin-bottom: 15px;
+
+
+.barhop-heading  {
+    color: black;
+    font-size: 58px;
+    letter-spacing: 5px;
+    margin-left: 21px;
+    text-align: center;
+    padding-top: 150px;
+    }
+
+    .jumbotron-landing {
+       background-color: rgba(0, 0, 0, 0.5);
+       height: 100px;
+       text-align: center;
+       
+       
+    }
+/* ----------------------------------------Manchester */
+
+.manchester-container {
+  background-color: #450601;
 }
-/* ----------------------------------------waypoint */
+
 #right-panel {
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
@@ -156,31 +268,23 @@ li a:hover {
   font-size: 12px;
 }
 
-#mapWaypoint {
-  height: 250px;
-  border: 1px solid red;
-  padding: 10px;
-  width: 70%;
-  text-align: center;
-  position: relative;
-  float: left;
-  box-shadow: 20px 20px 50px 10px pink;
-}
 #right-panel {
   margin: 20px;
   border-width: 2px;
   width: 20%;
   height: 400px;
-  float: left;
-  text-align: left;
+  float: bottom;
+  text-align: bottom;
   padding-top: 0;
 }
+
 #directions-panel {
   margin-top: 10px;
-  background-color: #ffee77;
+  background-color: paleturquoise;
   padding: 10px;
   overflow: scroll;
   height: 174px;
+  margin-bottom: 20px;
 }
 
 /* ----------------------------------------Modal */
@@ -190,45 +294,7 @@ li a:hover {
   color: red;
 }
 
-/* ----------------------------------------Breweries near you  */
 
-#panel {
-  height: 100%;
-  width: null;
-  background-color: white;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: all 0.2s ease-out;
-}
-
-.open {
-  width: 250px;
-}
-
-/* Styling for place details */
-.hero {
-  width: 100%;
-  height: auto;
-  max-height: 166px;
-  display: block;
-}
-
-.place,
-p {
-  font-family: "open sans", arial, sans-serif;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.details {
-  color: darkslategrey;
-}
-
-a {
-  text-decoration: none;
-  color: cadetblue;
-}
 
 @media only screen and (max-width: 600px) {
   .card-london {
@@ -262,17 +328,12 @@ a .newsletter {
 }
 
 .newsletter {
-    transition: transform 100ms ease-in-out;
-    transform: scale(.9);
+  transition: transform 100ms ease-in-out;
+  transform: scale(0.9);
 }
 
-.newsletter:hover  {
-    transform: scale(2);
-}
-
-.about-container {
-    border: 1px solid black;
-    background-color: red;
+.newsletter:hover {
+  transform: scale(2);
 }
 
 /* ----------------------------------------Footer */
@@ -288,6 +349,8 @@ a .newsletter {
 }
 
 .newsletter-container {
-    padding-top: 50px;
-    padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
+
+

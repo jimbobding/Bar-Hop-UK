@@ -367,3 +367,13 @@ window.onclick = function(event) {
   }
 }
 </
+
+#right-panel {
+  margin: 20px;
+  border-width: 2px;
+  width: 20%;
+  height: 400px;
+  float: left;
+  text-align: left;
+  padding-top: 0;
+}

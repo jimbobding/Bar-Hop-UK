@@ -52,7 +52,7 @@ function initAutocomplete() {
 function handleLocationError(browserHasGeolocation, infoWindow) {
   // Set default location to Sydney, Australia
   pos = { lat: -33.856, lng: 151.215 };
-  map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("breweries-map"), {
     center: pos,
     zoom: 15,
   });
@@ -173,7 +173,7 @@ function showPanel(placeResult) {
     let firstPhoto = placeResult.photos[0];
     let photo = document.createElement("img");
     photo.classList.add("hero");
-    photo.src = firstPhoto.getUrl();
+    photo.src = firstPhoto.getUrl(),'_blank';
     infoPane.appendChild(photo);
   }
 
@@ -198,7 +198,7 @@ function showPanel(placeResult) {
     let websiteUrl = document.createTextNode(placeResult.website);
     websiteLink.appendChild(websiteUrl);
     websiteLink.title = placeResult.website;
-    websiteLink.href = placeResult.website;
+    websiteLink.href = placeResult.website; 
     websitePara.appendChild(websiteLink);
     infoPane.appendChild(websitePara);
   }
@@ -207,4 +207,3 @@ function showPanel(placeResult) {
   infoPane.classList.add("open");
 }
 
-console.log("sup")
