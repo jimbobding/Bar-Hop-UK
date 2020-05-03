@@ -13,10 +13,11 @@ body {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 80vh;
   width: auto;
   justify-content: center;
   position: relative;
+  border: 3px solid red;
 }
 
 #beer-bottles {
@@ -28,60 +29,49 @@ body {
   height: 40vh;
   width: auto;
   justify-content: center;
-  
 }
 
-#bar-hop-logo {
-
-    background-image: url("../images/Copy of Add a little bit of body text.png");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
-    justify-content: center;
-    z-index: 2;
-    margin-top:  250px;
-    margin-left: 400px;
-    position: absolute;
+#hop {
+  background-image: url("./images/single-hop.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: auto;
+  justify-content: center;
 }
 
 /* ----------------------------------------Navbar */
 
-img.logo {
-    height: 6rem;
+  img.bar-hop-logo {
+  height: 6rem;
+  width: 6rem;
+  z-index: 4;
 }
 
 .nav-hop {
   height: 5rem;
   background-color: #0e9594;
   border: 2px black solid;
+  z-index: 1;
 }
 
-#hop {
-background-attachment: fixed;
-  background-image: url("../images/cartoon-hop.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60px;
-  width: auto;
-  justify-content: center;
-  z-index: 0;
-}
+
 
 li a {
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
-  color: #127475;
+  color: black;
 }
 
 li a:hover {
-  color: black;
+  color: red;
 }
+
 /* ----------------------------------------Landing */
+
 .landing-container {
-   padding-top: 20px;
+  padding-top: 20px;
 }
 
 /* ----------------------------------------About */
@@ -91,6 +81,10 @@ li a:hover {
   background-color: red;
   padding: 5px;
   text-align: center;
+}
+
+.about-logo {
+  height: 6rem;
 }
 
 /* ----------------------------------------Breweries near you  */
@@ -182,9 +176,8 @@ a {
 
 .breweries-near-container {
   padding-bottom: 50px;
+  text-align: center;
 }
-
-
 
 .card-text {
   text-align: center;
@@ -217,6 +210,7 @@ a {
 
 .breweries-near-heading {
   text-align: center;
+  
 }
 
 .about-heading {
@@ -225,32 +219,29 @@ a {
   padding: 10px;
 }
 
-
-
-.barhop-heading  {
-    color: black;
-    font-size: 58px;
-    letter-spacing: 5px;
-    margin-left: 21px;
-    text-align: center;
-    padding-top: 150px;
-    }
-
-    .jumbotron-landing {
-       background-color: rgba(0, 0, 0, 0.5);
-       height: 100px;
-       text-align: center;
-       
-       
-    }
-/* ----------------------------------------Manchester */
-
-.manchester-container {
-  background-color: #450601;
+.barhop-heading {
+  color: black;
+  font-size: 58px;
+  letter-spacing: 5px;
+  margin-left: 21px;
+  text-align: center;
+  padding-top: 150px;
 }
 
+.jumbotron-cities {
+ background-color: #4169e1;
+}
+
+/* ----------------------------------------Manchester */
+
+.manchester-heading {
+    text-align: center;
+}
+
+.manchester-container {
+  background: linear-gradient(red, yellow);
+}
 #right-panel {
-  font-family: "Roboto", "sans-serif";
   line-height: 30px;
   padding-left: 10px;
 }
@@ -273,18 +264,19 @@ a {
   border-width: 2px;
   width: 20%;
   height: 400px;
-  float: bottom;
-  text-align: bottom;
+  float: left;
+  text-align: left;
   padding-top: 0;
 }
-
 #directions-panel {
   margin-top: 10px;
-  background-color: paleturquoise;
+  background-color: #ffee77;
   padding: 10px;
   overflow: scroll;
   height: 174px;
-  margin-bottom: 20px;
+  float: right;
+  width: 200px;
+  border: 2px solid black;
 }
 
 /* ----------------------------------------Modal */
@@ -294,21 +286,37 @@ a {
   color: red;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-  .card-london {
-    box-shadow: transparent;
-  }
-
-  .card-manchester {
-    box-shadow: 0;
-  }
-
-  .card-liverpool {
-    box-shadow: 0;
-  }
+.fullname {
+    padding-top: 20px;
 }
+
+input#emailaddress {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+input#fullname {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.btn-signup {
+    width: 10rem;
+    background-color: red;
+}
+
+.btn-signup:hover {
+    background-color: black;
+}
+
+.modal-body {
+     box-shadow: 10px 10px 10px 10px #0e9594;
+}
+
+input#fullname.form-control {
+    color: red;
+}
+
 
 /* ----------------------------------------Newsletter */
 
@@ -353,4 +361,32 @@ a .newsletter {
   padding-bottom: 25px;
 }
 
+/* ----------------------------------------Media Query */
 
+@media (max-width: 768px) {
+  .card-breweries-near {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 987px) {
+  #BarHop-logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card-london {
+    box-shadow: none;
+    border: 3px solid yellow;
+  }
+
+  .card-manchester {
+    box-shadow: none;
+    border: 3px solid red;
+  }
+
+  .card-liverpool {
+    box-shadow: none;
+    border: 3px solid blue;
+  }
+}

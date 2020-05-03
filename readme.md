@@ -22,7 +22,7 @@ breweries operating in larger towns in the UK, with a view of setting up a servi
 
 What the user wants
 
-1. 
+
 
 1. As a user I want to be able navigate across the site with ease.
 2. As a user I want to be able to find out what facilities the site has to offer.

@@ -377,3 +377,234 @@ window.onclick = function(event) {
   text-align: left;
   padding-top: 0;
 }
+
+<div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">hhwkqwkldnqklwdnkq</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fas fa-beer"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section class="container-fluid">
+              <div class="row-bg-color-contact">
+                <div class="col">
+                  <h3 class="contact-heading uppercase text-center">
+                    Sign up for our monthly newsletter!
+                  </h3>
+                  <h5 class="uppercase text-center">Lets drink together!</h5>
+                  <div class="center-form">
+                    <form onsubmit="return sendMail(this);">
+                      <input
+                        type="text"
+                        name="name"
+                        id="fullname"
+                        class="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        id="emailaddress"
+                        class="form-control"
+                        placeholder="Email"
+                        required
+                      />
+                     
+                      <div class="form-row text-center">
+                        <div class="col">
+                          <button type="submit" class="btn btn-secondary">
+                            Sign Up!
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container newsletter-container">
+      <a href="#signUpModal" data-toggle="modal"
+        ><h3 class="newsletter">
+          <i class="fas fa-newspaper"></i>Newsletter<i
+            class="fas fa-newspaper"
+          ></i></h3
+      ></a>
+    </div>
+
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="signUpModalLabel"
+      aria-hidden="true"
+    >
+      <!-- /.Modal-Header ----------------------------------->
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">hhwkqwkldnqklwdnkq</h5>
+
+            <!-- /.Modal-Corner-Close-Button ----------------------------------->
+
+          
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fas fa-beer"></i></span>
+            </button>
+          </div>
+
+          <!-- /.Modal-Body ----------------------------------->
+
+          <div class="modal-body">
+            <section class="container-fluid">
+              <div class="row-bg-color-contact">
+                <div class="col col-md-12">
+                  <h3 class="contact-heading uppercase text-center">
+                    Sign up for our monthly newsletter!
+                  </h3>
+                  <h5 class="uppercase text-center">Lets drink together!</h5>
+                  <div class="center-form">
+                    <form onsubmit="return sendMail(this);">
+                      <input
+                        type="text"
+                        name="name"
+                        id="fullname"
+                        class="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        id="emailaddress"
+                        class="form-control"
+                        placeholder="Email"
+                        required
+                      />
+
+                      <div class="form-row text-center">
+                        <div class="col">
+                          <button type="submit" class="btn btn-secondary">
+                            Sign Up!
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    	<div class="header">
+		<div class="logo">
+			<a href="index.html">Blinker</a>
+		</div>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+            <i class=" burger fas fa-hamburger"></i>
+        </label>
+		<ul class="menu">
+        <li><a href="drinks.html">Drinks</a></li>
+			
+		<li><a href="music.html">Music</a></li>	
+		<li><a href="goodtimes.html">Good Times</a></li>	
+
+
+			<label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+		</ul>
+
+	</div>
+
+
+        <nav class="navbar navbar-expand-md nav-hop">
+      <!------------------------Logo----------------------------->
+
+      <a  href="index.html">
+        <div class="nav-bar-logo">
+          <div id="BarHop-logo">
+            <img
+              src="assets/images/Bar Hop UK (1).png"
+              class="logo"
+              alt="Bar-Hop-UK"
+            />
+          </div>
+      </div></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cities">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test.html">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Newsletter</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </nav>
