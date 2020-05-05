@@ -43,29 +43,45 @@ body {
 
 /* ----------------------------------------Navbar */
 
-  img.bar-hop-logo {
-  height: 6rem;
-  width: 6rem;
-  z-index: 4;
+
+.bg-light {
+     background-color:  #0e9594!important;
+     
 }
 
-.nav-hop {
-  height: 5rem;
-  background-color: #0e9594;
-  border: 2px black solid;
-  z-index: 1;
-}
+  .bar-hop-logo {
+      height: 6rem;
+      
 
-
+  }
 
 li a {
   font-size: 30px;
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
 li a:hover {
   color: red;
+}
+
+
+
+@media (max-width: 767px) {
+  .card-breweries-near {
+    width: 15rem;
+  }
+
+  a.nav-link {
+    text-align: center;
+  }
+
+  img.bar-hop-logo {
+    text-align: center;
+    size: 5rem;
+    padding-left: 20.5rem;
+  }
 }
 
 /* ----------------------------------------Landing */
@@ -90,8 +106,21 @@ li a:hover {
 /* ----------------------------------------Breweries near you  */
 
 .breweries-near-container {
+  border: 1px solid black;
+  background-color: red;
+  padding: 5px;
+  text-align: center;
+}
+
+.breweries-near-container {
   margin-bottom: 15px;
 }
+
+.brewery-card-container {
+  padding-bottom: 30px;
+}
+
+/* ----------------------------------------Breweries near you   map page */
 
 #panel {
   height: 100%;
@@ -210,7 +239,6 @@ a {
 
 .breweries-near-heading {
   text-align: center;
-  
 }
 
 .about-heading {
@@ -229,13 +257,13 @@ a {
 }
 
 .jumbotron-cities {
- background-color: #4169e1;
+  background-color: #4169e1;
 }
 
 /* ----------------------------------------Manchester */
 
 .manchester-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .manchester-container {
@@ -287,36 +315,35 @@ a {
 }
 
 .fullname {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 input#emailaddress {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 input#fullname {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .btn-signup {
-    width: 10rem;
-    background-color: red;
+  width: 10rem;
+  background-color: red;
 }
 
 .btn-signup:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .modal-body {
-     box-shadow: 10px 10px 10px 10px #0e9594;
+  box-shadow: 10px 10px 10px 10px #0e9594;
 }
 
 input#fullname.form-control {
-    color: red;
+  color: red;
 }
-
 
 /* ----------------------------------------Newsletter */
 
@@ -363,18 +390,15 @@ a .newsletter {
 
 /* ----------------------------------------Media Query */
 
-@media (max-width: 768px) {
-  .card-breweries-near {
-    width: 15rem;
-  }
-}
 
-@media (max-width: 987px) {
-  #BarHop-logo {
-    display: none;
-  }
-}
+
+
 @media only screen and (max-width: 800px) {
+  .card-breweries-near {
+    box-shadow: none;
+    border: 3px solid black;
+  }
+
   .card-london {
     box-shadow: none;
     border: 3px solid yellow;

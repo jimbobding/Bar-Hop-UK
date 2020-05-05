@@ -608,3 +608,137 @@ window.onclick = function(event) {
         </span>
       </div>
     </nav>
+
+    <a href="index.html">
+        <div class="bar-hop-logo">
+          <div id="BarHop-logo">
+            <img
+              src="assets/images/Bar Hop UK (1).png"
+              class="logo bar-hop-logo"
+              alt="Bar-Hop-UK"
+            />
+          </div></div
+      ></a>
+
+           <li class="nav-item">
+            <a
+              class="nav-link disabled collapsed-brand"
+              href="#newsletter"
+              tabindex="-1"
+              aria-disabled="true"
+              >Newsletter</a
+            >
+          </li>
+
+
+              <nav class="navbar navbar-expand-md menu nav-hop ">
+      <button
+        class="navbar-toggler d-flex mr-auto justify-content-end"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-beer"></i> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <!------------------------Navbar-logo----------------------------->
+
+      	<div class="navbar-logo bar-hop-logo">
+				<div id="logo">
+					<a href="index.html">
+						 <img
+              src="assets/images/Bar Hop UK (1).png"
+              class="logo bar-hop-logo"
+              alt="Bar-Hop-UK"
+            /></a>
+				</div>
+			</div>
+
+      <a class="navbar-brand navhop-brand" href="#">Bar Hop UK</a>
+      
+    
+        <ul class="navbar-nav d-flex mr-auto justify-content-end nav-list">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cities">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Newsletter</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+
+    li.nav-item.collapsed-brand {
+     background-color: #0e9594;
+     
+}
+
+.collapsed-brand {
+     background-color: #0e9594;
+     padding-bottom: 4rem;
+}
+
+
+img.bar-hop-logo {
+  height: 6rem;
+  width: 6rem;
+  z-index: 4;
+  float: left;
+}
+
+.nav-hop {
+  height: 5rem;
+  background-color: #0e9594;
+  border: 2px black solid;
+  z-index: 1;
+}
+
+
+
+li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: red;
+}
+
+
+
+.navbar-toggler-icon {
+ display: hidden;   
+}
+/* ----------------------------------------Landing */
+
+.landing-container {
+  padding-top: 20px;
+}
+
+div#logo {
+text-align: center;
+padding-bottom: 2rem;
+background-color: #0e9594;
+size: 5rem;
+
+}
+
+@media (max-width: 987px) {
+  #BarHop-logo {
+    display: none;
+  }
+}
