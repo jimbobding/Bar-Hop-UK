@@ -12,7 +12,7 @@ function initAutocomplete() {
   bounds = new google.maps.LatLngBounds();
   infoWindow = new google.maps.InfoWindow();
   currentInfoWindow = infoWindow;
-  /* TODO: Step 4A3: Add a generic sidebar */
+  /*  Add a generic sidebar */
   infoPane = document.getElementById("panel");
 
   // Try HTML5 geolocation
@@ -99,7 +99,7 @@ function createMarkers(places) {
       title: place.name,
     });
 
-    /* TODO: Step 4B: Add click listeners to the markers */
+    /*  Add click listeners to the markers */
     // Add click listener to each marker
     google.maps.event.addListener(marker, "click", () => {
       let request = {
@@ -130,7 +130,7 @@ function createMarkers(places) {
   map.fitBounds(bounds);
 }
 
-/* TODO: Step 4C: Show place details in an info window */
+/*  Show place details in an info window */
 // Builds an InfoWindow to display details above the marker
 function showDetails(placeResult, marker, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -154,7 +154,7 @@ function showDetails(placeResult, marker, status) {
   }
 }
 
-/* TODO: Step 4D: Load place details in a sidebar */
+/*  Load place details in a sidebar */
 // Displays place details in a sidebar
 function showPanel(placeResult) {
   // If infoPane is already open, close it
@@ -167,7 +167,7 @@ function showPanel(placeResult) {
     infoPane.removeChild(infoPane.lastChild);
   }
 
-  /* TODO: Step 4E: Display a Place Photo with the Place Details */
+  /*  Display a Place Photo with the Place Details */
   // Add the primary photo, if there is one
   if (placeResult.photos) {
     let firstPhoto = placeResult.photos[0];
@@ -199,6 +199,8 @@ function showPanel(placeResult) {
     websiteLink.appendChild(websiteUrl);
     websiteLink.title = placeResult.website;
     websiteLink.href = placeResult.website; 
+  // Opens website on new page
+    websiteLink.target = "_blank";
     websitePara.appendChild(websiteLink);
     infoPane.appendChild(websitePara);
   }

@@ -43,6 +43,10 @@ body {
 
 /* ----------------------------------------Navbar */
 
+/* I had to use the !important tag on some of the css in the navigation bar to override the some of 
+the built in bootstrap classes */
+
+
 .bg-light {
   background-color: #0e9594 !important;
 }
@@ -51,15 +55,17 @@ body {
   height: 6rem;
 }
 
-li a {
-  font-size: 30px;
+
+
+li a { font-size: 25px;
   text-decoration: none;
-  color: black;
+  color: black!important;
   width: 100%;
+  
 }
 
 li a:hover {
-  color: red;
+ color: #183362 !important;
 }
 
 /* ------------------Mobile */
@@ -200,7 +206,7 @@ a {
 }
 
 #mapManchester {
-  height: 340px;
+  height: 100vh;
   border: 1px solid red;
   padding: 10px;
   width: 70%;
@@ -210,20 +216,20 @@ a {
 }
 
 #mapLondon {
-  height: 250px;
+  height: 100vh;
   border: 1px solid yellow;
   padding: 10px;
   width: 100%;
   text-align: center;
 }
 
-#mapTest {
-  height: 250px;
-  border: 1px solid red;
+#mapLiverpool {
+  height: 100vh;
+  border: 1px solid blue;
   padding: 10px;
   width: 100%;
   text-align: center;
-  position: relative;
+ 
 }
 /* ----------------------------------------Cards */
 
@@ -351,13 +357,14 @@ a {
   padding-top: 0;
   z-index: 3;
 }
+
 #directions-panel {
   margin-top: 10px;
   padding: 10px;
   overflow: scroll;
-  height: 174px;
+  height: 250px;
   float: right;
-  width: 200px;
+  width: 250px;
   border: 2px solid black;
 }
 

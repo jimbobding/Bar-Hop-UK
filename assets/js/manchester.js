@@ -1,7 +1,7 @@
 let cloud = { lat: 53.478026, lng: -2.221592 };
 let track = { lat: 53.477921, lng: -2.221168 };
 let pamona = { lat: 53.48892, lng: -2.25118 };
-let shindigger = { lat: 53.47779, lng: -2.308078 };
+let shindigger = { lat: 53.47779, lng: -2.308078};
 
 let pos;
 let map;
