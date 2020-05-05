@@ -53,8 +53,6 @@
     <!------------------------Navbar----------------------------->
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-    
-
       <button
         class="navbar-toggler ml-auto"
         type="button"
@@ -66,7 +64,7 @@
       >
         <span class="navbar-toggler-icon"><i class="fas fa-beer"></i></span>
       </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <a href="index.html">
           <div class="logo">
             <div id="BarHop-logo">
@@ -75,38 +73,46 @@
                 class="logo bar-hop-logo"
                 alt="Bar-Hop-UK"
               />
-           
-         </div>
-         </div></a>
-       
-          <ul class="navbar-nav ml-auto nav-list">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cities">Cities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#newsletter">Newsletter</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#newsletter"
-                tabindex="-1"
-                aria-disabled="true"
-                >Newsletter</a
-              >
-            </li>
-          </ul>
-        </div>
-      
+            </div></div
+        ></a>
+
+        <ul class="navbar-nav ml-auto nav-list">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nearyou">Breweries near you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cities">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#join">Join</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#newsletter"
+              tabindex="-1"
+              aria-disabled="true"
+              >Newsletter</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <!------------------------Landing page image----------------------------->
-
-    <div id="beertap-pic"></div>
+    <div class="container-fluid landing-container">
+      <div id="beertap-pic"></div>
+    </div>
 
     <!------------------------About heading----------------------------->
 
@@ -144,7 +150,7 @@
     </div>
     <!------------------------Breweries near you section/ Heading & copy----------------------------->
 
-    <h2 class="breweries-near-heading">Breweries Near You</h2>
+    <h2 class="breweries-near-heading" id="nearyou">Breweries Near You</h2>
     <div class="col d-flex justify-content-center">
       <img
         src="assets/images/Bar-Hop-UK.png"
@@ -333,22 +339,123 @@
 
     <div class="container" id="newsletter">
       <div class="row">
-        <div class="col-12 col-md-6 d-flex justify-content-cente">
+        <div class="col d-flex justify-content-cente">
           <p>
             Sign up to our monthly newsletter so we can keep you in the know
-            about everything that is beer. Bar Hop UK is free to use app with
-            premium option that willl soon be available
+            about everything that is beer. 
           </p>
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-cente">
-          <ul>
-            <li>Tours</li>
-            <li>Discounts</li>
-            <li>Become a beer server</li>
-            <li>Learn to home brew</li>
-            <li>Access more breweries across the UK</li>
-            <li>Discount to beer festivals and events</li>
-          </ul>
+      </div>
+    </div>
+
+    <!------------------------Join up cards----------------------------->
+
+  <h2 class="cities-heading jumbotron jumbotron-premium" id="premium">
+      Join our premium package
+    </h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="premium-header"></h1>
+
+          <p>
+            Join up to our premium package which not only hooks you up with more
+            breweries and craft drinkers but also opens up a whole world of
+            other offers in the craft beer industry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-columns">
+      <div class="card premium-card">
+        <img
+          src="assets/images/tasting-flight.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tasting Flights</h5>
+          <p class="card-text">
+            Tasting flights of beers at every brewery included in the price.
+          </p>
+        </div>
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>join.</p>
+          <footer class="blockquote-footer">
+          
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card premium-card">
+        <img
+          src="assets/images/brewery-tours.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Brewery Tours</h5>
+          <p class="card-text">Tour each brewery and talk to the brewers.</p>
+          <p class="card-text">
+            
+          </p>
+        </div>
+      </div>
+      <div class="card bg-primary text-white text-center p-3">
+        <blockquote class="blockquote mb-0" id="join">
+          <p>Join up.</p>
+          <button><a href="payment-form.html" target="_blank">Join</a></button>
+          <footer class="blockquote-footer text-white">
+            <small>
+            <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center">
+        <div class="card-body meet-new-card">
+          <h5 class="card-title">Meet new People</h5>
+          <p class="card-text">
+            This card has a regular title and short paragraphy of text below it.
+          </p>
+          <p class="card-text">
+           
+          </p>
+        </div>
+      </div>
+      <div class="card premium-card">
+        <img
+          src="assets/images/meet-new-people.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>Meet like mineded people and explore a world of craft beer.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card premium-card">
+        <div class="card-body">
+          <h5 class="card-title">Home Brewing</h5>
+          <img
+            src="assets/images/brewing-beer.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <p class="card-text">
+            Learn to home brew with our online videos and discounted clsses!.
+          </p>
+          <p class="card-text">
+            
+          </p>
         </div>
       </div>
     </div>
@@ -362,5 +469,6 @@
     <script src="assets/js/test.js"></script>
     <script src="assets/js/email.js"></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
   </body>
 </html>

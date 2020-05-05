@@ -43,17 +43,13 @@ body {
 
 /* ----------------------------------------Navbar */
 
-
 .bg-light {
-     background-color:  #0e9594!important;
-     
+  background-color: #0e9594 !important;
 }
 
-  .bar-hop-logo {
-      height: 6rem;
-      
-
-  }
+.bar-hop-logo {
+  height: 6rem;
+}
 
 li a {
   font-size: 30px;
@@ -66,8 +62,7 @@ li a:hover {
   color: red;
 }
 
-
-
+/* ------------------Mobile */
 @media (max-width: 767px) {
   .card-breweries-near {
     width: 15rem;
@@ -77,10 +72,42 @@ li a:hover {
     text-align: center;
   }
 
-  img.bar-hop-logo {
+  .logo {
     text-align: center;
     size: 5rem;
-    padding-left: 20.5rem;
+  }
+
+  #beer-pic {
+    display: none;
+  }
+
+  .overlay-image {
+    display: none;
+  }
+
+  #directions-panel {
+    width: 100% !important;
+    margin-bottom: 5rem !important;
+  }
+
+  #right-panel select,
+  #right-panel input {
+    font-size: 10px;
+  }
+
+  #right-panel {
+    width: 100% !important;
+    padding-right: 3rem;
+  }
+
+  #mapManchester {
+    height: 340px;
+    border: 1px solid red;
+    padding: 10px;
+    width: 100% !important;
+    text-align: center;
+    position: relative;
+    float: left;
   }
 }
 
@@ -120,7 +147,7 @@ li a:hover {
   padding-bottom: 30px;
 }
 
-/* ----------------------------------------Breweries near you   map page */
+/* ----------------------------------------Breweries near you/map page */
 
 #panel {
   height: 100%;
@@ -199,6 +226,7 @@ a {
   position: relative;
 }
 /* ----------------------------------------Cards */
+
 .cities-container {
   padding-bottom: 50px;
 }
@@ -230,11 +258,15 @@ a {
   box-shadow: 10px 10px 20px 10px blue;
 }
 
+.premium-card {
+    box-shadow: 5px 5px 10px 5px #95A78D; 
+}
+
 /* ----------------------------------------Headings */
 
 .cities-heading {
   text-align: center;
-  font-size: 35px;
+  font-size: 65px;
 }
 
 .breweries-near-heading {
@@ -260,15 +292,37 @@ a {
   background-color: #4169e1;
 }
 
+.jumbotron-premium {
+    background-color: #4169e1;
+}
+
 /* ----------------------------------------Manchester */
 
 .manchester-heading {
   text-align: center;
+  padding-top: 2rem;
 }
 
-.manchester-container {
-  background: linear-gradient(red, yellow);
+.overlay-image {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  z-index: -1;
 }
+
+#beer-pic {
+  background-image: url("../images/cloudwater-rain.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+  height: 80vh;
+  width: auto;
+}
+
 #right-panel {
   line-height: 30px;
   padding-left: 10px;
@@ -295,10 +349,10 @@ a {
   float: left;
   text-align: left;
   padding-top: 0;
+  z-index: 3;
 }
 #directions-panel {
   margin-top: 10px;
-  background-color: #ffee77;
   padding: 10px;
   overflow: scroll;
   height: 174px;
@@ -389,9 +443,6 @@ a .newsletter {
 }
 
 /* ----------------------------------------Media Query */
-
-
-
 
 @media only screen and (max-width: 800px) {
   .card-breweries-near {

@@ -1,74 +1,133 @@
-#menu{
-	width: 35px;
-	height: 30px;
-	margin: 30px 0 20px 20px;
-	cursor: pointer;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
-.bar{
-	height: 5px;
-	width: 100%;
-	background-color: #b81568;
-	display: block;
-	border-radius: 5px;
-	transition: 0.3s ease;
+
+body{
+  background: #2196F3;
+  margin: 0 10px;
 }
-#bar1{
-	transform: translateY(-4px);
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
 }
-#bar3{
-	transform: translateY(4px);
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
 }
-.nav li a{
-	color: #fff;
-	text-decoration: none;
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
 }
-.nav li a:hover{
-	font-weight: bold;
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
 }
-.nav li{
-	list-style: none;
-	padding: 16px 0;
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
 }
-.nav{
-	padding: 0;
-	margin: 0 20px;
-	transition: 0.3s ease;
-	display: none;
+
+.card-item{
+  width: 48%;
 }
-.menu-bg, #menu-bar{
-	top: 0;
-	left: 0;
-	position: absolute;
+
+.space{
+  margin-bottom: 20px;
 }
-.menu-bg{
-	z-index: 1;
-	width: 0;
-	height: 0;
-	margin: 30px 0 20px 20px;
-	background: radial-gradient(circle,#e94498,#b81568);
-	border-radius: 50%;
-	transition: 0.3s ease;
+
+.icon-relative{
+  position: relative;
 }
-#menu-bar{
-	z-index: 2;	
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
 }
-.change-bg{
-	width: 550px;
-	height: 540px;
-	transform: translate(-60%,-30%);
+
+.btn{
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.change .bar{
-	background-color: white;
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
 }
-.change #bar1{
-	transform: translateY(4px) rotateZ(-45deg);
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
 }
-.change #bar3{
-	transform: translateY(-6px) rotate(45deg);
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
 }
-.change #bar2{
-	opacity: 0;
-}
-.change{
-	display: block;
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
 }
