@@ -819,3 +819,9 @@ size: 5rem;
     ></script>
   </body>
 </html>
+
+@media (max-width: 767px) {
+ #panel {
+     float: bottom;
+ }
+}

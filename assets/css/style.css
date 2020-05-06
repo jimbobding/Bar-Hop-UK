@@ -55,8 +55,6 @@ the built in bootstrap classes */
   height: 6rem;
 }
 
-
-
 li a { font-size: 25px;
   text-decoration: none;
   color: black!important;
@@ -140,7 +138,7 @@ li a:hover {
 
 .breweries-near-container {
   border: 1px solid black;
-  background-color: red;
+  background-color: 	#ff3300;
   padding: 5px;
   text-align: center;
 }
@@ -202,7 +200,7 @@ a {
 #breweries-map {
   height: 500px;
   border: 1px solid black;
-  width: 100%;
+  width: 70%;
 }
 
 #mapManchester {
@@ -295,14 +293,14 @@ a {
 }
 
 .jumbotron-cities {
-  background-color: #4169e1;
+  background-color: #FF82E2;
 }
 
 .jumbotron-premium {
-    background-color: #4169e1;
+    background-color: #FED715;
 }
 
-/* ----------------------------------------Manchester */
+/* ----------------------------------------Cities/Map pages */
 
 .manchester-heading {
   text-align: center;
@@ -318,16 +316,6 @@ a {
   z-index: -1;
 }
 
-#beer-pic {
-  background-image: url("../images/cloudwater-rain.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
-  position: relative;
-  height: 80vh;
-  width: auto;
-}
 
 #right-panel {
   line-height: 30px;
@@ -366,6 +354,18 @@ a {
   float: right;
   width: 250px;
   border: 2px solid black;
+}
+
+#start {
+    background-color: #FF82E2
+}
+
+#end {
+    background-color: #FF82E2
+}
+
+input#submit {
+    background-color: #FED715
 }
 
 /* ----------------------------------------Modal */
@@ -425,11 +425,11 @@ a .newsletter {
 
 .newsletter {
   transition: transform 100ms ease-in-out;
-  transform: scale(0.9);
+  transform: scale(0.5);
 }
 
 .newsletter:hover {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 /* ----------------------------------------Footer */
@@ -457,6 +457,8 @@ a .newsletter {
     border: 3px solid black;
   }
 
+/* I found the box shadow blended to much on smaller devices so I changed the shadow to a border of the same colour */
+
   .card-london {
     box-shadow: none;
     border: 3px solid yellow;
@@ -471,4 +473,30 @@ a .newsletter {
     box-shadow: none;
     border: 3px solid blue;
   }
+}
+
+/* ---------------------------------------Waht we offer cards */
+
+.card-title {
+   text-align: center;
+}
+
+.bar-hop-footer {
+    height: 15rem;
+}
+
+#panel {
+  height: 40vh;
+  width: 50%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+}
+
+#breweries-map {
+  height: 300px;
+  border: 1px solid black;
+  width: 100%;
 }

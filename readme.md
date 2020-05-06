@@ -43,4 +43,23 @@ Fonts
 The main font I settled on was [Bangers](https://fonts.google.com/specimen/Bangers), I felt it gave a playful alomst comic book look which I liked
 and felt a theme based around fun and good times would work for an app that was in a sense promotng good times.
 
+
+Colours 
+
+I wanted the colour theme to be based around light and fun, Bar Hop Uk being a fun app I wanted this comethrough in the design and colour. I wanted a pop arty 
+comic book colour theme. I originally did look at using colour assosiated with beer an hops and did trial some colours of that scheme but found them a bit to earthy
+and not fitting inwith my scope of the app.
+
+sites that helped me with my colour schemes
+
+
+
 Logo's 
+
+
+Problems
+
+I had  a problem with my modal newsletter pop up, when the newspaper logo which had a transform scale from .9 - 2 ws activated it would push the modal off 
+screen on some of the smaller devices. I fixed ths by changing the transform scale to .5 - 1. still giving me the affect I desired but the transform was smaller
+and more controlled, which along whith sorting out my placemant issue also looke better asthetically.
+
