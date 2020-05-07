@@ -3,8 +3,7 @@ Pics - Manchester -https://www.visitmanchester.com/
        liverpool - https://www.wikiwand.com/
 
 
-Problems - had a problem getting the images to be the correct size in the different city vards that I got from bootstrap. solved 
-solved this by seeting a height with in each of the image.
+
 
 
 My Idea
@@ -52,9 +51,21 @@ and not fitting inwith my scope of the app.
 
 sites that helped me with my colour schemes
 
+[Adobe Color](https://color.adobe.com/create)
+[Scheme Color](https://www.schemecolor.com/pop-art.php)
+[color Hunter](http://www.colorhunter.com/)
+
+#FED715
+
+#0e9594 - Blue Chill
+
 
 
 Logo's 
+
+<p align="center">
+  <img width="150" height="100" src="https://github.com/jimbobding/bar-hop-uk/master/assets/images/Bar Hop UK (1).png">
+</p>
 
 
 Problems

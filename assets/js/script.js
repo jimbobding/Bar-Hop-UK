@@ -1,7 +1,4 @@
-let cloud = { lat: 53.478026, lng: -2.221592 };
-let track = { lat: 53.477921, lng: -2.221168 };
-let pamona = { lat: 53.48892, lng: -2.25118 };
-let shindigger = { lat: 53.47779, lng: -2.308078};
+
 
 let pos;
 let map;
@@ -11,14 +8,22 @@ let currentInfoWindow;
 let service;
 let infoPane;
 
+// Renders new map from the ID of map
+
 function initAutocomplete() {
   var directionsService = new google.maps.DirectionsService();
   var directionsRenderer = new google.maps.DirectionsRenderer();
   var map = new google.maps.Map(document.getElementById("mapManchester"), {
     zoom: 16,
     center: { lat: 53.4808, lng: -2.2426 },
+    tilt: 45,
+
+//I set tme map to satelite, I felt it gave a urban street view that not only looked appropriate seemed 
+//easier to navigate in a city// 
     mapTypeId: 'satellite'
   });
+
+
 
   map.setTilt(45);
 

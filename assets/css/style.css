@@ -72,6 +72,10 @@ li a:hover {
     width: 15rem;
   }
 
+#beertap-pic {
+    display: hidden;
+}
+
   a.nav-link {
     text-align: center;
   }
@@ -317,7 +321,6 @@ a {
   z-index: -1;
 }
 
-
 #right-panel {
   line-height: 30px;
   padding-left: 10px;
@@ -496,6 +499,7 @@ a .newsletter {
 .bar-hop-footer {
     height: 15rem;
 }
+
 
 
 
