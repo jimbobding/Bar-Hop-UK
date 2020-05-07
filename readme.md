@@ -65,18 +65,12 @@ sites that helped me with my colour schemes
 Logo's 
 
 I used to loos through out the appin keeping with the comic esque theme. Both of the logos had anchor tags that linked backed to the home page. I used the website 
-[Canva] {https://www.canva.com/} to design the logos.
+[Canva](https://www.canva.com/) to design the logos.
 
 <p align="center">
   <img width="150" height="100" src="https://github.com/jimbobding/bar-hop-uk/assets/images/Bar Hop UK (1).png">
 </p>
 
-
-Problems
-
-I had  a problem with my modal newsletter pop up, when the newspaper logo which had a transform scale from .9 - 2 ws activated it would push the modal off 
-screen on some of the smaller devices. I fixed ths by changing the transform scale to .5 - 1. still giving me the affect I desired but the transform was smaller
-and more controlled, which along whith sorting out my placemant issue also looke better asthetically.
  
 
  ##Technologies used
@@ -102,16 +96,37 @@ and more controlled, which along whith sorting out my placemant issue also looke
 
 ##Testing
 
-For testing I used the [goggle chrome devolpment tools][https://developers.google.com/web/tools/chrome-devtools] to test the app on a 
+For testing I used the [goggle chrome devolpment tools](https://developers.google.com/web/tools/chrome-devtools) to test the app on a 
 variety of screen sizes for Responsivness, design and user experience. Although on chrome devolpment tools the app apeared to work acroos all 
 all screen sizes on using my own Iphone and Ipad I found some Problems.
+
+####Problems
 
 1. Images on the landing page that are not attatchd to bootstrap cards appear out of focus on Iphone and Ipad.
 2. Certain Images on teh Bootstrap card do not show all though the ALT description does show up.
 3. One of my map pages does not display the map needed to display the brewery tour.
+4. My modal email pop up would not stay on the page on smaller devices.
 
-For the 1st problem I reoved the pictures for mobile devices although orignally it was for aesthatic purposes I found that the user experiecce
-was alot better with out the pictures on the smaller screens.
+3. third
+
+
+
+Problems
+
+I had  a problem with my modal newsletter pop up, when the newspaper logo which had a transform scale from .9 - 2 ws activated it would push the modal off 
+screen on some of the smaller devices. I fixed ths by changing the transform scale to .5 - 1. still giving me the affect I desired but the transform was smaller
+and more controlled, which along whith sorting out my placemant issue also looke better asthetically.
+
+####Resolution
+
+1. I removed the pictures and found out that the app functioned alot better with out the pictures, making it easier to
+navigate. 
+2. I used back up pictures that I had, finding that [webp] (https://en.wikipedia.org/wiki/WebP#Restrictions) image files 
+did not work.
+3. third
+4. The logo button had a transform animation on it that went from scale .9 - 2, I chnaged this to .5 -1. This did not push the modal
+off the screen.
+
 
 
 
@@ -121,6 +136,19 @@ For my wireframes I first usd pen and paper to jot down my original thoughts and
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The deign did change from the pen and pad to balsamiq 
 to actual coding as certain things did not look at good as I hoped, but overall it sayed pretty much the same.
 
+##Functuionality
+
+1. Navigation bar that allows you to navigate through the index page of the app.
+2. Breweries near you - Enclosed in a Bootstrap cards.
+- A map that uses the users loction using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to 
+find breweries close to that location.
+- Locatios appear on the map in the fprm of markers.
+- Each marker is clickable which displays information on te brewery including a website which takes the user to the venues website on a seperate web page.
+3. Cities - enclosed in three seperate Bootstrap cards
+- Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a statring brewery a finishing brewery 
+and a number of breweries on the way.
+- A route is plot showing the user the way and calculating the distance.
+4. Newsletter modal - a Bootstrap modal allowing the user to sign up 
 
 
  
