@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers:100,300,400,700&display=swap");
 
-@font-face {
-    font-family: " AVENGER";
-    src: url("assets/fonts/AVENGER.otf") format("otf"), url("assets/fonts/AVENGER.ttf") format("ttf")
-}
+
 
 body {
-  font-family: "AVENGER", sans-serif;
+  font-family: "Bangers", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -78,7 +75,11 @@ li a:hover {
   }
 
 #beertap-pic {
-    display: hidden;
+    display: none;
+}
+
+#beer-bottles {
+    display: none;
 }
 
   a.nav-link {
@@ -122,6 +123,16 @@ li a:hover {
     position: relative;
     float: left;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #beertap-pic {
+    display: none;
+}
+
+#beer-bottles {
+    display: none;
+}
 }
 
 /* ----------------------------------------Landing */
@@ -281,7 +292,7 @@ a {
 .cities-heading {
   text-align: center;
   font-size: 65px;
-  font-family: "AVENGER"
+ 
 }
 
 .breweries-near-heading {

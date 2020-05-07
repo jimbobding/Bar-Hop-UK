@@ -103,7 +103,17 @@ and more controlled, which along whith sorting out my placemant issue also looke
 ##Testing
 
 For testing I used the [goggle chrome devolpment tools][https://developers.google.com/web/tools/chrome-devtools] to test the app on a 
-variety of screen sizes.
+variety of screen sizes for Responsivness, design and user experience. Although on chrome devolpment tools the app apeared to work acroos all 
+all screen sizes on using my own Iphone and Ipad I found some Problems.
+
+1. Images on the landing page that are not attatchd to bootstrap cards appear out of focus on Iphone and Ipad.
+2. Certain Images on teh Bootstrap card do not show all though the ALT description does show up.
+3. One of my map pages does not display the map needed to display the brewery tour.
+
+For the 1st problem I reoved the pictures for mobile devices although orignally it was for aesthatic purposes I found that the user experiecce
+was alot better with out the pictures on the smaller screens.
+
+
 
 ##Wireframe
 
