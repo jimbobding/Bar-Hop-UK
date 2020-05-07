@@ -825,3 +825,24 @@ size: 5rem;
      float: bottom;
  }
 }
+
+
+@media (max-width: 767px) {
+
+#panel {
+  height: 40vh;
+  width: 50%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+}
+
+#breweries-map {
+  height: 300px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+}
