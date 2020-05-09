@@ -127,9 +127,8 @@ screen sizes on using my iPhone and iPad I found some problems.
 ####Problems
 
 1. Images on the landing page that are not attached to bootstrap cards appear out of focus on iPhone and Ipad.
-2. Certain Images on the Bootstrap card do not show although the ALT description does show up.
-3. Two of my map pages does not display the map needed to display the brewery tour.
-4. My modal email pop up would not stay on the page on smaller devices.
+2. Certain Images on the Bootstrap card do not show although the ALT description does show up. (This was on safari browser)
+3. My modal email pop up would not stay on the page on smaller devices.
 
 
 ####Resolution
@@ -145,7 +144,9 @@ For my wireframes I first used pen and paper to jot down my original thoughts an
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
 to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
 
-[wireframes]()
+[wireframes](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/wireframes)
+[landing-page](wireframe/landing-page-desktop-mobile.jpg)
+
 
 ##Functuionality
 

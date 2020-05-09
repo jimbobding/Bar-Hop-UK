@@ -846,3 +846,53 @@ size: 5rem;
 }
 
 }
+
+   <option
+                  value="Unit 9A Queen's Yard, White Post Ln, London E9 5EN"
+                  >Howling Hops Brewery and Tank Bar</option
+                >
+                <option value="46 Druid St, London SE1 2EZ"
+                  >Southwark Brewing Company</option
+                >
+                <option value="118 Druid St, Bermondsey, London SE1 2HH"
+                  >Anspach & Hobday: The Bermondsey Taproom</option
+                >
+                <option value="Blenheim Grove, Peckham, London SE15 4QL"
+                  >Brick Brewery Taproom</option
+                >
+                <option value="London Fields Brewery, 365-366 Warburton St, London E8 3RR"
+                  >London Fields Brewery</option
+                >
+                <option value="55-59 Wilkin Street Mews, Kentish Town, London NW5 3NN"
+                  >Camden Town Brewery</option
+                >
+                <option value="42 Newington Causeway, London SE1 6DR"
+                  >German Kraft Beer
+                </option>
+                <option value="Unit 1 & 2, Yelverton Road, London SW11 3QG"
+                  >Sambrook's Brewery</option
+                >
+                <option value="34 Raymouth Rd, Bermondsey, London SE16 2DB"
+                  >Partizan Brewing</option
+                >
+                <option value="Lawrence Trading Estate, Blackwall Ln, Greenwich Peninsula, London SE10 0AR"
+                  >Meantime Brewing Company</option
+                >
+                <option value="Arch 11, Dockley Road Industrial Estate, Dockley Rd, Bermondsey, London SE16 3SF"
+                  >The Kernel Brewery</option
+                >
+                <option value="83-84 Enid St, Bermondsey, London SE16 3RA"
+                  >Bianca Road Brew Co.</option
+                >
+                <option value="4, 160 Hamilton Rd, Norwood, London SE27 9SF"
+                  >The London Beer Factory</option
+                >
+                <option value="Rosendale Rd, Norwood, London SE24 9EH"
+                  >Bullfinch Brewery
+                </option>
+                <option value="Unit 6, Lockwood Industrial Park, Mill Mead Rd, London N17 9QP"
+                  >Pressure Drop Brewery and Taproom</option
+                >
+                 <option value="tileyard studios, Tileyard Rd, London N7 9AH"
+                  >Two Tribes Brewing</option
+                >
