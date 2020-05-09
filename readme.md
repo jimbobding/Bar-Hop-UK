@@ -4,68 +4,67 @@ liverpool - https://www.wikiwand.com/
 
 #My Idea
 
-Craft beer has become a major buismess as people want to drink bootique and locally sourced beer more and more. Many new beweries
-are opening up every year, and they are opening up in or near built up areas having taprooms attatched to the brewy allowing them
-to sell thier product on site.
+Craft beer has become a major business as people want to drink boutique and locally sourced beer more and more. Many new breweries
+are opening up every year, and they are opening up in or near built-up areas having taprooms attached to the brewery allowing them
+to sell their product on site.
 
-1. Being in or around a bulit up area gives you an immediate customer base.
-2. It allows you to get the name of your product out with out having an obsurd marketing budget.
-3. Having the tap room attatched to brewery lets you turn extra space into a revenue source.
+1. Being in or around a built-up area gives you an immediate customer base.
+2. It allows you to get the name of your product out without having an absurd marketing budget.
+3. Having the taproom attached to brewery lets you turn extra space into a revenue source.
 
-This gave me the idea of making an app that was deticated to letting you know the closest breweries to you currebt location and of the
+This gave me the idea of making an app that was dedicated to letting you know the closest breweries to your current location and of the
 breweries operating in larger towns in the UK, with a view of setting up a service that would take people on tours of the breweries.
 
 ##What the user wants
 
-1. The user wants to esily navigate across all areas of the app. Users will bore quickly if they can find their way around from the momet they start
-   interaction witj the app.
-2. The user wants the functions of the map to be well displayed and easily accesable. Users want to use he app for its functions and shold not have spend
-   a lot of time finding the functions and learnong how to use them
-3. The user wants te app to be informative. They are using the app for a reason so they should be satofied upon using it that has been fulfilled.
-4. The user wnats the information to be corret. As teh app sets direcrtin wth way poits asw ell as pointing out te closest breweries to the user this information
+1. The user wants to easily navigate across all areas of the app. Users will bore quickly if they can find their way around from the moment they start
+   interaction with the app.
+2. The user wants the functions of the map to be well displayed and easily accessible. Users want to use the app for its functions and should not have to spend
+   a lot of time finding the functions and learning how to use them
+3. The user wants te app to be informative. They are using the app for a reason so they should be satisfied upon using it that has been fulfilled.
+4. The user wants the information to be correct. As the app sets directions with waypoints as well as pointing out the closest breweries to the user, this information
    needs to be correct
 
 ###Research
 
-Research into the idea for thae app began by looking at pub crawl type of websites, which is what I wanted to design but something the user can use indepenedtly and 
-more crat orientated. Sites I used for reference 
+Research into the idea for the app began by looking at pub crawl type of websites, which is what I wanted to design but something the user can use independently and more craft orientated. Sites I used for reference 
 
 [Barhopping UK](https://www.barhoppingpubcrawl.com/) - A bar crawl website where you pay to be part of a bar crawl which offers free shots, discounts and free entry to bars.
 
-I did think abut alining my ideas with this lsightly and making a pay/premium service which included tours around the brewery and free tasting flights at breweries, but opted 
-agaist the idea in te end as it would be to much to implememt in the time scale I had.
+I did think to abut alining my ideas with this slightly and making a pay/premium service which included tours around the brewery and free tasting flights at breweries but opted 
+against the idea in the end as it would be too much to implement in the time scale I had.
 
-I found the website abit garish aesthetically, but informative. I enjoyed the use of thr interactive booking calander taht allowed the user to book a space and buy tickets online.
-A bing map was used on the site but ot was quite static only used to display the meeting place. I would have like something more interacrtie allowing the user to see the the route the
+I found the website a bit garish aesthetically, but informative. I enjoyed the use of the interactive booking calendar that allowed the user to book a space and buy tickets online.
+A Bing map was used on the site but it was static and only used to display the meeting place. I would have liked something more interactive allowing the user to see the route the
 bar crawl would take.
 
-[UK Brewery Tours](https://www.ukbrewerytours.com/) - A brewery tour website the disign on this website is definatly not as garish and was closer to something I wanted to achieve in terms
-of the right types of audience, but I found the website slighty plain looking. As my idea is function based and not offrng a pad service I felt I could play on it being more fun.
+[UK Brewery Tours](https://www.ukbrewerytours.com/) - A brewery tour Website.  The designs on this website are not as garish and were closer to something I wanted to achieve in terms
+of the right types of audience, but I found the website slightly plain-looking. As my idea is function-based and not offering a paid service I felt I could play on it being more fun and enticing.
 
-They als used a calander with ticket buying facilities. They used a maop to mae the meeting point the map was static buut it did use a custom marker to show the meeting point which I liked.
-
-
+They also used a calendar with ticket buying facilities. They used a map to make the meeting point the map was static but it did use a custom marker to show the meeting point which I liked.
 
 
-I wanted to make the site accesable and straight to the point as It is desighned to be used for people on the go and most likely with
-there hand held device. To to this I did not want to add to many options and links in the beginning, extar fascets to the site are planned to
-be implemted later.
+
+
+I wanted to make the site accessible and straight to the point, It is designed to be used for people on the go and most likely with
+a handheld device. To do this I did not want to add to many options and links, in the beginning, extra fascets to the site are planned to
+be implemented later.
 
 ##Design
 
-I made the App using teh [Bootstrap 4](https://getbootstrap.com/) framework fro a responsive framework, this worked especially well as I envisioned
-this to be an app mainly used on poratble devices.
+I made the App using the [Bootstrap 4](https://getbootstrap.com/) framework for a responsive framework, this worked especially well as I envisioned
+this to be an app mainly used on portable devices.
 
 ###Fonts
 
-The main font I settled on was [Bangers](https://fonts.google.com/specimen/Bangers), I felt it gave a playful alomst comic book look which I liked
-and felt a theme based around fun and good times would work for an app that was in a sense promotng good times.
+The main font I settled on was [Bangers](https://fonts.google.com/specimen/Bangers), I felt it gave a playful almost comic book look which I liked
+and felt a theme based around fun and good times would work for an app that was in a sense promoting good times.
 
 ###Colours
 
-I wanted the colour theme to be based around light and fun, Bar Hop Uk being a fun app I wanted this comethrough in the design and colour. I wanted a pop arty
-comic book colour theme. I originally did look at using colour assosiated with beer an hops and did trial some colours of that scheme but found them a bit to earthy
-and not fitting inwith my scope of the app.
+I wanted the colour theme to be based around light and fun, Bar Hop Uk being a fun app I wanted this come through in the design and colour. I wanted a pop arty
+comic book colour theme. I originally did look at using the colour associated with beer hops and did trial some colours of that scheme but found them a bit too earthy
+and not fitting in with my scope of the app.
 
 sites that helped me with my colour schemes
 
@@ -79,7 +78,7 @@ sites that helped me with my colour schemes
 
 Logo's
 
-I used to loos through out the appin keeping with the comic esque theme. Both of the logos had anchor tags that linked backed to the home page. I used the website
+I used the logos throughout the app in keeping with the comic esque theme. Both of the logos had anchor tags that linked back to the home page. I used the website
 [Canva](https://www.canva.com/) to design the logos.
 
 <p align="center">
@@ -108,50 +107,83 @@ I used to loos through out the appin keeping with the comic esque theme. Both of
 
 ##Testing
 
-For testing I used the [goggle chrome devolpment tools](https://developers.google.com/web/tools/chrome-devtools) to test the app on a
-variety of screen sizes for Responsivness, design and user experience. Although on chrome devolpment tools the app apeared to work acroos all
-all screen sizes on using my own Iphone and Ipad I found some Problems.
+For testing, I used the [goggle chrome development tools](https://developers.google.com/web/tools/chrome-devtools) to test the app on a
+variety of screen sizes for Responsiveness, design and user experience. Although on chrome development tools, the app appeared to work across all
+screen sizes on using my iPhone and iPad I found some problems.
+
+###Devices used for testing 
+
+1. MacBook pro
+2. iPad
+3. iPhone
+
+
+1. Chrome 
+2. Safari
+3. third
+
+
 
 ####Problems
 
-1. Images on the landing page that are not attatchd to bootstrap cards appear out of focus on Iphone and Ipad.
-2. Certain Images on teh Bootstrap card do not show all though the ALT description does show up.
-3. One of my map pages does not display the map needed to display the brewery tour.
+1. Images on the landing page that are not attached to bootstrap cards appear out of focus on iPhone and Ipad.
+2. Certain Images on the Bootstrap card do not show although the ALT description does show up.
+3. Two of my map pages does not display the map needed to display the brewery tour.
 4. My modal email pop up would not stay on the page on smaller devices.
 
-5. third
 
 ####Resolution
 
-1. I removed the pictures and found out that the app functioned alot better with out the pictures, making it easier to
-   navigate.
-2. I used back up pictures that I had, finding that [webp](https://en.wikipedia.org/wiki/WebP#Restrictions) image files
-   did not work.
+1. I removed the pictures and found out that the app functioned a lot better without the pictures, making it easier to navigate.
+2. I used back up pictures that I had, finding that [webp](https://en.wikipedia.org/wiki/WebP#Restrictions) image files did not work.
 3. third
-4. The logo button had a transform animation on it that went from scale .9 - 2, I chnaged this to .5 -1. This did not push the modal
-   off the screen.
+4. The logo button had a transform animation on it that went from scale .9 - 2, I changed this to .5 -1. This did not push the modal off the screen.
 
 ##Wireframe
 
-For my wireframes I first usd pen and paper to jot down my original thoughts and then once I had a clearer picture in my head of
-how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The deign did change from the pen and pad to balsamiq
-to actual coding as certain things did not look at good as I hoped, but overall it sayed pretty much the same.
+For my wireframes I first used pen and paper to jot down my original thoughts and then once I had a clearer picture in my head of
+how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
+to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
+
+[wireframes]()
 
 ##Functuionality
 
-1. Navigation bar that allows you to navigate through the index page of the app.
-2. Breweries near you - Enclosed in a Bootstrap cards.
+1. The navigation bar allows you to navigate through the index page of the app.
+2. Breweries near you - Enclosed in a Bootstrap card.
 
-- A map that uses the users loction using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to
-  find breweries close to that location.
-- Locatios appear on the map in the fprm of markers.
-- Each marker is clickable which displays information on te brewery including a website which takes the user to the venues website on a seperate web page.
+- A map that uses the user's location using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to find breweries close to that location.
+- Locations appear on the map in the form of markers.
+- Each marker is clickable which displays information on the brewery including a  website URL which takes the user to the venue's website on a separate web page.
 
-3. Cities - enclosed in three seperate Bootstrap cards
+3. Cities - enclosed in three separate Bootstrap cards
 
-- Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a statring brewery a finishing brewery
-  and a number of breweries on the way.
-- A route is plot showing the user the way and calculating the distance.
+- Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a starting brewery a finishing brewery and choose from a list of several breweries on the way.
+- A route is plotted showing the user the way and calculating the distance.
 
 4. Newsletter modal - a Bootstrap modal allowing the user to sign up for a newsletter.
    -EmailJs is used to send a reply to the user.
+
+##Deployment 
+
+To deploy the site 
+
+1. I logged in [Github](https://github.com/).
+2. I selected my repository Bar Hop UK.
+3. Went into the setting section of my repository.
+4. Went to the Github pages section.
+5. Under the source tab, I picked the master branch.
+
+My website is now deployed and live here
+
+https://jimbobding.github.io/Bar-Hop-UK/
+
+I can still edit the site remotely from my gitpod workspace by making changes committing them and then and pushing them through to the repository.
+
+
+
+1. first
+2. second
+3. third
+
+
