@@ -2,7 +2,7 @@ Pics - Manchester -https://www.visitmanchester.com/
 London - https://www.cityam.com/
 liverpool - https://www.wikiwand.com/
 
-#My Idea
+# My Idea
 
 Craft beer has become a major business as people want to drink boutique and locally sourced beer more and more. Many new breweries
 are opening up every year, and they are opening up in or near built-up areas having taprooms attached to the brewery allowing them
@@ -15,7 +15,7 @@ to sell their product on site.
 This gave me the idea of making an app that was dedicated to letting you know the closest breweries to your current location and of the
 breweries operating in larger towns in the UK, with a view of setting up a service that would take people on tours of the breweries.
 
-##What the user wants
+## What the user wants
 
 1. The user wants to easily navigate across all areas of the app. Users will bore quickly if they can find their way around from the moment they start
    interaction with the app.
@@ -25,7 +25,7 @@ breweries operating in larger towns in the UK, with a view of setting up a servi
 4. The user wants the information to be correct. As the app sets directions with waypoints as well as pointing out the closest breweries to the user, this information
    needs to be correct
 
-###Research
+### Research
 
 Research into the idea for the app began by looking at pub crawl type of websites, which is what I wanted to design but something the user can use independently and more craft orientated. Sites I used for reference 
 
@@ -50,17 +50,17 @@ I wanted to make the site accessible and straight to the point, It is designed t
 a handheld device. To do this I did not want to add to many options and links, in the beginning, extra fascets to the site are planned to
 be implemented later.
 
-##Design
+## Design
 
 I made the App using the [Bootstrap 4](https://getbootstrap.com/) framework for a responsive framework, this worked especially well as I envisioned
 this to be an app mainly used on portable devices.
 
-###Fonts
+### Fonts
 
 The main font I settled on was [Bangers](https://fonts.google.com/specimen/Bangers), I felt it gave a playful almost comic book look which I liked
 and felt a theme based around fun and good times would work for an app that was in a sense promoting good times.
 
-###Colours
+### Colours
 
 I wanted the colour theme to be based around light and fun, Bar Hop Uk being a fun app I wanted this come through in the design and colour. I wanted a pop arty
 comic book colour theme. I originally did look at using the colour associated with beer hops and did trial some colours of that scheme but found them a bit too earthy
@@ -72,20 +72,24 @@ sites that helped me with my colour schemes
 [Scheme Color](https://www.schemecolor.com/pop-art.php)
 [color Hunter](http://www.colorhunter.com/)
 
-####FED715
+#### FED715
 
-####0e9594 - Blue Chill
+#### 0e9594 - Blue Chill
 
-Logo's
+### Logo's
 
 I used the logos throughout the app in keeping with the comic esque theme. Both of the logos had anchor tags that linked back to the home page. I used the website
 [Canva](https://www.canva.com/) to design the logos.
 
 <p align="center">
-  <img width="150" height="100" src="https://github.com/jimbobding/bar-hop-uk/assets/images/Bar Hop UK logo.png">
+  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images//Bar Hop UK logo.png">
 </p>
 
-##Technologies used
+<p align="center">
+  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images//Bar Hop UK logo.png">
+</p>
+
+## Technologies used
 
 - [git-hub](https://github.com/)
 - [git-pod](https://www.gitpod.io/)
@@ -99,19 +103,19 @@ I used the logos throughout the app in keeping with the comic esque theme. Both 
 - [Jquery](https://jquery.com/download/)
 - [Bootstrap 4](https://getbootstrap.com/)
 
-##Validators
+## Validators
 
 - [The-W3c-Markup-Validation-Service](https://jigsaw.w3.org/css-validator/) - Validates/checks for mistakes CSS
 - [The-W3c-Markup-Validation-Service](https://validator.w3.org/) - Validates/checks for mistakes HTML
 - [Esprima](https://esprima.org/demo/validate.html) [js-hint](https://jshint.com/) -Validates/checks for mistakes Javascript
 
-##Testing
+## Testing
 
 For testing, I used the [goggle chrome development tools](https://developers.google.com/web/tools/chrome-devtools) to test the app on a
 variety of screen sizes for Responsiveness, design and user experience. Although on chrome development tools, the app appeared to work across all
 screen sizes on using my iPhone and iPad I found some problems.
 
-###Devices used for testing 
+### Devices used for testing 
 
 1. MacBook pro
 2. iPad
@@ -124,31 +128,30 @@ screen sizes on using my iPhone and iPad I found some problems.
 
 
 
-####Problems
+#### Problems
 
 1. Images on the landing page that are not attached to bootstrap cards appear out of focus on iPhone and Ipad.
 2. Certain Images on the Bootstrap card do not show although the ALT description does show up. (This was on safari browser)
 3. My modal email pop up would not stay on the page on smaller devices.
 
 
-####Resolution
+#### Resolution
 
 1. I removed the pictures and found out that the app functioned a lot better without the pictures, making it easier to navigate.
 2. I used back up pictures that I had, finding that [webp](https://en.wikipedia.org/wiki/WebP#Restrictions) image files did not work.
 3. third
 4. The logo button had a transform animation on it that went from scale .9 - 2, I changed this to .5 -1. This did not push the modal off the screen.
 
-##Wireframe
+## Wireframe
 
 For my wireframes I first used pen and paper to jot down my original thoughts and then once I had a clearer picture in my head of
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
 to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
 
 [wireframes](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/wireframes)
-[landing-page](wireframe/landing-page-desktop-mobile.jpg)
 
 
-##Functuionality
+## Functuionality
 
 1. The navigation bar allows you to navigate through the index page of the app.
 2. Breweries near you - Enclosed in a Bootstrap card.
@@ -165,7 +168,7 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 4. Newsletter modal - a Bootstrap modal allowing the user to sign up for a newsletter.
    -EmailJs is used to send a reply to the user.
 
-##Deployment 
+## Deployment 
 
 To deploy the site 
 
