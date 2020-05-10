@@ -922,3 +922,13 @@ size: 5rem;
               />
 
               id="premium"
+
+              #hop {
+  background-image: url("./images/single-hop.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: auto;
+  justify-content: center;
+}

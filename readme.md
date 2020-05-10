@@ -3,6 +3,10 @@
   <img width="100%" height="90%" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Bar Hop UK Logo Guy.png">
 </p>
 
+**Demo**
+----------
+A live demo can be found [here](https://8000-e35317c9-c729-49c7-bdd6-a14b63318364.ws-eu01.gitpod.io/)
+
 
 # My Idea
 
@@ -46,8 +50,6 @@ of the right types of audience, but I found the website slightly plain-looking. 
 They also used a calendar with ticket buying facilities. They used a map to make the meeting point the map was static but it did use a custom marker to show the meeting point which I liked.
 
 
-
-
 I wanted to make the site accessible and straight to the point, It is designed to be used for people on the go and most likely with
 a handheld device. To do this I did not want to add to many options and links, in the beginning, extra fascets to the site are planned to
 be implemented later.
@@ -75,13 +77,22 @@ sites that helped me with my colour schemes
 [Scheme Color](https://www.schemecolor.com/pop-art.php)
 [color Hunter](http://www.colorhunter.com/)
 
-#### 0e9594 - Blue Chill 
+### 0e9594 - Blue Chill 
 
-Was used for both header and footer of the app.
+Was used for both header and footer of the app. The main colour of the app as it opens and closes the index page.
+
+
 
 #### FED715
 
+#### rgba(235, 10, 10, 0.5)
 
+### Theme for the cities map page
+
+These are the colours I used for the cities map page, I felt it was in the keeping of a comic book type theme, being opposing red and blue colour.
+
+#### #48a4d6
+#### #eb190d
 
 ### Logo's
 
@@ -102,13 +113,13 @@ I used the logos throughout the app in keeping with the comic esque theme. Both 
 - [git-pod](https://www.gitpod.io/) Used as my IDE to work on my code
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) Used to build my project
 - [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html) Used to style my project
-- [Javascript](https://www.javascript.com/) Implemented to mae project responsive for the user
-- [Google-Maps-API](https://developers.google.com/maps/documentation) Used for my maps section. The code was taken from google maps API website wth some minor adjustemnts
-- [Google-Fonts](https://fonts.google.com/) Used for the two types of text used through out the project 
-- [Emailjs](https://www.emailjs.com/) Usd for the auto reply from the sign up email
+- [Javascript](https://www.javascript.com/) Implemented to make the project responsive for the user
+- [Google-Maps-API](https://developers.google.com/maps/documentation) Used for my maps section. The code was taken from google maps API website wth some minor adjustments
+- [Google-Fonts](https://fonts.google.com/) Used for the two types of text used throughout the project 
+- [Emailjs](https://www.emailjs.com/) Usd for the auto-reply from the sign-up email
 - [Font-awesome 5](https://fontawesome.com/) Used for icons used on the project 
 - [Jquery](https://jquery.com/download/) Jquery used to simplify some of the code
-- [Bootstrap 4](https://getbootstrap.com/) Used for the mobile first framework of my project and also for the navigation bar, the cards (breweries near you, Cities & Bar hop sections) and modal sign up form
+- [Bootstrap 4](https://getbootstrap.com/) Used for the mobile-first framework of my project and also for the navigation bar, the cards (breweries near you, Cities & Bar hop sections) and modal sign up form
 
 ## Validators
 
@@ -122,7 +133,7 @@ For testing, I used the [goggle chrome development tools](https://developers.goo
 variety of screen sizes for Responsiveness, design and user experience. Although on chrome development tools, the app appeared to work across all
 screen sizes on using my iPhone and iPad I found some problems.
 
-For the actual task of testing I went through each device and used all the functions on the app. This was to check out the aesthetics and functionality 
+For the actual task of testing, I went through each device and used all the functions on the app. This was to check out the aesthetics and functionality 
 off the app.
 
 ### Devices used for testing 
@@ -141,7 +152,7 @@ off the app.
 - iPad
 - iPad Pro
 
-#### My personal aplliances
+#### My appliances
 
 - MacBook pro 
 - iPad
@@ -149,13 +160,13 @@ off the app.
 
  #### Browswers 
 
- some of the browsers were tested on [Lambdatest](https://app.lambdatest.com/console/realtime) whoch allowed me to test in real time across different browsers.
+ some of the browsers were tested on [Lambdatest](https://app.lambdatest.com/console/realtime) which allowed me to test in real-time across different browsers.
 
 - Chrome
 - Safari
 - Internet explorer - windows 8.1 & 10
 - firefox windows - windows 8.1
-- Edge - windows 10 
+- Edge - Windows 10 
 
 
 
@@ -165,7 +176,7 @@ off the app.
 1. Images on the landing page that are not attached to bootstrap cards appear out of focus on iPhone and Ipad.
 2. Certain Images on the Bootstrap card do not show although the ALT description does show up. (This was on safari browser)
 3. My modal email pop up would not stay on the page on smaller devices.
-4. on Edge widows 8.1 the colour on teh about section did not show up.
+4. on Edge widows 8.1 the colour on the about section did not show up.
 
 
 
@@ -177,16 +188,15 @@ off the app.
 4. unresolved 
 
 
-After testing I believe the site functions works well for a ueser.
+After testing I believe the site functions works well for a user.
 
 - The maps all display properly.
-- The find you closest breweies section functions properly.
-- All the waypoint brewery pages function proplerly.
-- The Navbar function worked and the links all taking the user to the corrct place.
+- The find your closest breweries section functions properly.
+- All the waypoint brewery pages function properly.
+- The Navbar function worked and the links all taking the user to the correct place.
 - The email modal worked across all browsers.
 
-I had to make some minor aesthetic changes to the site after viewing in different sizes like as I mentoed above removing certain pictures as they 
-spoilt the UI. With more time I would work out away to resolve teh issue. I lso changed certain parts of my code to keep teh UI smooth across all
+I had to make some minor aesthetic changes to the site after viewing in different sizes like as I mentioned above removing certain pictures as they spoilt the UI. With more time I would work out a way to resolve the issue. I also changed certain parts of my code to keep the UI smooth across all
 devices.
 
 
@@ -202,10 +212,9 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 ## Functuionality
 
-1. [The navigation bar](function-images/About.png)
- allows you to navigate through the index page of the app.
+1. The navigation bar allows you to navigate through the index page of the app.
 - It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
-2. About - A brief description of th site.
+2. About - A brief description of the app
 3. Breweries near you - Enclosed in a Bootstrap card.
 - A map that uses the user's location using [google-geolocation] to find breweries close to that location.
 - Locations appear on the map in the form of markers.
@@ -217,9 +226,9 @@ to actual coding as certain things did not look at good as I hoped, but overall 
    -EmailJs is used to send a reply to the user.
 6. Bar Hop UK/ What we offer. A column of bootstrap cards with images of what can be obtained from visiting breweries through the app.
 - Each card will have a picture and some text
-- One of the cards will be hyperlink to a seperate website. It is a beers server webbsite that has information on people wanting to get into the beer industry. The website will open on a new page.
-- The middle card will be a logo picture of the site and will be an a linkl back to the top of the page.
-7. Footer, the footer will hold the social media links. All links will lead to the home page of the social media site, I have not mafde up links for this app.
+- One of the cards will be a hyperlink to a separate website. It is a beers server website that has information on people wanting to get into the beer industry. The website will open on a new page.
+- The middle card will be a logo picture of the site and will be a link back to the top of the page.
+7. Footer, the footer will hold social media links. All links will lead to the home page of the social media site, I have not made up links for this app.
 - Facebook
 - Twitter
 - Linkedin
@@ -243,23 +252,17 @@ https://jimbobding.github.io/Bar-Hop-UK/
 I can still edit the site remotely from my gitpod workspace by making changes committing them and then and pushing them through to the repository.
 
 
-
-1. first
-2. second
-3. third
-
-
 ## Credits 
 
 ### Code
 
-- The navigation bar, cards, modal and mobile first framework all from Bootstrap
-- The maps and code that go with the breweries near you locater came from [here] (https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including html, css and javasript was obtained from this site and then modified by myself)
-- The maps and code that go with the cities maps came from [here](https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints). (all code including html, css and javasript was obtained from this site and then modified by myself)
+- The navigation bar, cards, modal and mobile-first framework all from Bootstrap
+- The maps and code that go with the breweries near you locater came from [here] (https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
+- The maps and code that go with the cities maps came from [here](https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
 
 ### websites
 
-All websites I used for refernce and guidance.
+All websites I used for reference and guidance.
 
 - [stackoverflow](https://stackoverflow.com/)
 - [googlemaps API](https://cloud.google.com/maps-platform/)
@@ -269,9 +272,9 @@ All websites I used for refernce and guidance.
 
 ### Images
 
-- Images where all obtained through google searches. 
+- Images were all obtained through google searches. 
 
 
 ### Special Thanks
 
-- I want like to gove a special mention to all the people at Code Institute in particular the Tutor support team and my Mentor Aaron Sinnot.
+- I would like to give a special mention to all the people at Code Institute, in particular, the Tutor support team and my Mentor Aaron Sinnot.
