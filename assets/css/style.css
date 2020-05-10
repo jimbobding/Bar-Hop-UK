@@ -9,7 +9,7 @@ body {
   font-size: 20px;
 }
 
-.about-container, .breweries-near-container, .barhop-container {
+.about-container, .breweries-near-container, .barhop-container, .card-text, .brewery-locator {
     font-family: 'Playfair Display', serif;
 }
 
@@ -39,6 +39,7 @@ body {
   background-repeat: no-repeat;
   height: 40vh;
   width: auto;
+  border: 3px solid black;
   justify-content: center;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -71,13 +72,13 @@ the built in bootstrap classes */
 
 li a { font-size: 25px;
   text-decoration: none;
-  color: black!important;
+  color: red;
   width: 100%;
   
 }
 
 li a:hover {
- color: #183362 !important;
+ color: red!important;
 }
 
 /* ----------------------------------------Landing */
@@ -151,14 +152,11 @@ p {
   color: darkslategrey;
 }
 
-a {
+#pannel, a {
   text-decoration: none;
   color: cadetblue;
 }
 
-.directions-container {
-  float: bottom;
-}
 
 /* ----------------------------------------Maps */
 
@@ -168,7 +166,7 @@ a {
   width: 100%;
 }
 
-#mapManchester {
+#map {
   height: 100vh;
   border: 1px solid red;
   padding: 10px;
@@ -178,22 +176,6 @@ a {
   float: left;
 }
 
-#mapLondon {
-  height: 100vh;
-  border: 1px solid yellow;
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-#mapLiverpool {
-  height: 100vh;
-  border: 1px solid blue;
-  padding: 10px;
-  width: 100%;
-  text-align: center;
- 
-}
 /* ----------------------------------------Cards */
 
 .cities-container {
@@ -227,8 +209,12 @@ a {
   box-shadow: 10px 10px 20px 10px blue;
 }
 
-.premium-card {
+.card-offering {
     box-shadow: 5px 5px 10px 5px #95A78D; 
+}
+
+.logo-card {
+    box-shadow: 5px 5px 10px 5px black; 
 }
 
 /* ----------------------------------------Headings */
@@ -268,18 +254,9 @@ a {
 
 /* ----------------------------------------Cities/Map pages */
 
-.manchester-heading {
+.city-map-heading {
   text-align: center;
   padding-top: 2rem;
-}
-
-.overlay-image {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.7;
-  position: absolute;
-  z-index: -1;
 }
 
 #right-panel {
@@ -424,7 +401,10 @@ a .newsletter {
   padding-top: 50px;
   padding-bottom: 25px;
 }
-
+ .barhop-container {
+     text-align: center;
+     padding-bottom: 2rem;
+ }
 
 /* ---------------------------------------What we offer cards */
 
@@ -485,7 +465,7 @@ a .newsletter {
     padding-right: 3rem;
   }
 
-  #mapManchester {
+  #map {
     height: 340px;
     border: 1px solid red;
     padding: 10px;
@@ -520,7 +500,7 @@ a .newsletter {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     #People-drinking {
     display: none;
 }
@@ -528,4 +508,30 @@ a .newsletter {
 #beer-bottles {
     display: none;
 }
+
+#directions-panel {
+    width: 100% !important;
+    margin-bottom: 5rem !important;
+  }
+
+  #right-panel select,
+  #right-panel input {
+    font-size: 10px;
+  }
+
+  #right-panel {
+    width: 100% !important;
+    padding-right: 3rem;
+  }
+
+  #map {
+    height: 340px;
+    border: 1px solid red;
+    padding: 10px;
+    width: 100% !important;
+    text-align: center;
+    position: relative;
+    float: left;
+  }
+
 }

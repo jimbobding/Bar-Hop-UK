@@ -905,3 +905,18 @@ size: 5rem;
   text-align: center;
   padding-top: 150px;
 }
+
+.overlay-image {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  z-index: -1;
+}
+
+  <img
+                src="assets/images/Bar Hop UK logo.png"
+                class="logo bar-hop-logo"
+                alt="Bar-Hop-UK"
+              />

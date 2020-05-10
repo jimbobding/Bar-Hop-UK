@@ -13,7 +13,7 @@ let infoPane;
 function initAutocomplete() {
   var directionsService = new google.maps.DirectionsService();
   var directionsRenderer = new google.maps.DirectionsRenderer();
-  var map = new google.maps.Map(document.getElementById("mapManchester"), {
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
     center: { lat: 53.4808, lng: -2.2426 },
     tilt: 45,

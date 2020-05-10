@@ -82,26 +82,26 @@ I used the logos throughout the app in keeping with the comic esque theme. Both 
 [Canva](https://www.canva.com/) to design the logos.
 
 <p align="center">
-  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images//Bar Hop UK logo.png">
+  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images//Bar Hop UK logo.png">
 </p>
 
 <p align="center">
-  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images//Bar Hop UK logo.png">
+  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images//Bar Hop UK logo.png">
 </p>
 
 ## Technologies used
 
-- [git-hub](https://github.com/)
-- [git-pod](https://www.gitpod.io/)
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html)
-- [Javascript](https://www.javascript.com/)
-- [Google-Maps-API](https://developers.google.com/maps/documentation)
-- [Google-Fonts](https://fonts.google.com/)
-- [Emailjs](https://www.emailjs.com/)
-- [Font-awesome 5](https://fontawesome.com/)
-- [Jquery](https://jquery.com/download/)
-- [Bootstrap 4](https://getbootstrap.com/)
+- [git-hub](https://github.com/) To Store my code
+- [git-pod](https://www.gitpod.io/) Used as my IDE to work on my code
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) Used to build my project
+- [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html) Used to style my project
+- [Javascript](https://www.javascript.com/) Implemented to mae project responsive for the user
+- [Google-Maps-API](https://developers.google.com/maps/documentation) Used for my maps section. The code was taken from google maps API website wth some minor adjustemnts
+- [Google-Fonts](https://fonts.google.com/) Used for the two types of text used through out the project 
+- [Emailjs](https://www.emailjs.com/) Usd for the auto reply from the sign up email
+- [Font-awesome 5](https://fontawesome.com/) Used for icons used on the project 
+- [Jquery](https://jquery.com/download/) Jquery used to simplify some of the code
+- [Bootstrap 4](https://getbootstrap.com/) Used for the mobile first framework of my project and also for the navigation bar, the cards (breweries near you, Cities & Bar hop sections) and modal sign up form
 
 ## Validators
 
