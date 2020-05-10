@@ -196,12 +196,12 @@ For my wireframes I first used pen and paper to jot down my original thoughts an
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
 to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
 
-[wireframes](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/wireframes)
+ [wireframes](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/wireframes)
 
 
 ## Functuionality
 
-1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images/Landing:nav.png)
+1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images/funtion images/About.png)
  allows you to navigate through the index page of the app.
 - It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
 2. [About](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/About.png) - A brief description of th site.
