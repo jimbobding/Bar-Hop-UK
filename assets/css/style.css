@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers:100,300,400,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 body {
   font-family: "Bangers", sans-serif;
@@ -9,13 +8,15 @@ body {
   font-size: 20px;
 }
 
-.about-container, .breweries-near-container, .barhop-container, .card-text, .brewery-locator {
-    font-family: 'Playfair Display', serif;
+.about-container,
+.breweries-near-container,
+.barhop-container,
+.card-text,
+.brewery-locator {
+  font-family: "Playfair Display", serif;
 }
 
-
 #People-drinking {
-
   background: url("../images/people-drinking.jpg");
   background-attachment: fixed;
   background-position: bottom;
@@ -61,7 +62,6 @@ body {
 /* I had to use the !important tag on some of the css in the navigation bar to override the some of 
 the built in bootstrap classes */
 
-
 .bg-light {
   background-color: #0e9594 !important;
 }
@@ -70,15 +70,15 @@ the built in bootstrap classes */
   height: 6rem;
 }
 
-li a { font-size: 25px;
+li a {
+  font-size: 22px;
   text-decoration: none;
-  color: red;
+  color: white !important;
   width: 100%;
-  
 }
 
 li a:hover {
- color: red!important;
+  color: red !important;
 }
 
 /* ----------------------------------------Landing */
@@ -91,7 +91,7 @@ li a:hover {
 
 .about-container {
   border: 1px solid black;
-  background-color: #F93822FF;
+  background-color: #f93822ff;
   padding: 5px;
   text-align: center;
 }
@@ -106,12 +106,10 @@ li a:hover {
   border: 1px solid black;
   background-color: #ff3300;
   padding: 5px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.breweries-near-container {
-  margin-bottom: 15px;
-}
 
 .brewery-card-container {
   padding-bottom: 30px;
@@ -120,15 +118,14 @@ li a:hover {
 /* ----------------------------------------Breweries near you/map page */
 
 #panel {
-      height: 100%;
-      width: null;
-      background-color: white;
-      position: fixed;
-      z-index: 1;
-      overflow-x: hidden;
-      transition: all .2s ease-out;
-    }
-
+  height: 100%;
+  width: null;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.2s ease-out;
+}
 
 .open {
   width: 250px;
@@ -152,11 +149,11 @@ p {
   color: darkslategrey;
 }
 
-#pannel, a {
+#pannel,
+a {
   text-decoration: none;
   color: cadetblue;
 }
-
 
 /* ----------------------------------------Maps */
 
@@ -193,6 +190,16 @@ p {
   text-decoration: none;
 }
 
+p.card-text a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+p.card-text a:hover {
+  color: red;
+  transition: 1ms;
+}
+
 .card-breweries-near {
   box-shadow: 10px 10px 20px 10px black;
 }
@@ -210,29 +217,30 @@ p {
 }
 
 .card-offering {
-    box-shadow: 5px 5px 10px 5px #95A78D; 
+  box-shadow: 5px 5px 10px 5px #95a78d;
 }
 
 .logo-card {
-    box-shadow: 5px 5px 10px 5px black; 
+  box-shadow: 5px 5px 10px 5px black;
+  background-color: #0e9594;
 }
 
 /* ----------------------------------------Headings */
 
 .landing-heading {
-    margin-top: 8rem;
-   font-size: 9rem;
-    color: black;
+  margin-top: 8rem;
+  font-size: 9rem;
+  color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-.cities-heading, .barhop-heading {
+.cities-heading,
+.barhop-heading {
   text-align: center;
-  font-size: 65px; 
+  font-size: 65px;
 }
-
 
 .breweries-near-heading {
   text-align: center;
@@ -245,11 +253,11 @@ p {
 }
 
 .jumbotron-cities {
-  background-color: #FF82E2;
+  background-color: rgba(235, 10, 10, 0.5);
 }
 
 .jumbotron-barhop {
-    background-color: #FED715;
+  background-color: #fed715;
 }
 
 /* ----------------------------------------Cities/Map pages */
@@ -299,26 +307,25 @@ p {
 }
 
 #start {
-    background-color: #48A4D6;
-    color: white;
-    border: 1px solid black;
+  background-color: #48a4d6;
+  color: white;
+  border: 1px solid black;
 }
 
- #end {
-    background-color: #48A4D6;
-    color: white;
-    border: 1px solid black;
+#end {
+  background-color: #48a4d6;
+  color: white;
+  border: 1px solid black;
 }
 
 #waypoints {
-        background-color: #48A4D6;
-        color: white;
+  background-color: #48a4d6;
+  color: white;
 }
 
 input#submit {
-    background-color: #EB190D;
-    color: white;
-
+  background-color: #eb190d;
+  color: white;
 }
 
 /* ----------------------------------------Modal */
@@ -401,22 +408,34 @@ a .newsletter {
   padding-top: 50px;
   padding-bottom: 25px;
 }
- .barhop-container {
-     text-align: center;
-     padding-bottom: 2rem;
- }
+
+.barhop-container {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.social-links li a i {
+  color: white;
+  padding-top: 1rem;
+  padding: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.social-links li a i:hover {
+  color: #3498db;
+  transition: 1s;
+}
 
 /* ---------------------------------------What we offer cards */
 
 .card-title {
-   text-align: center;
+  text-align: center;
 }
 
 .bar-hop-footer {
-    height: 15rem;
+  height: 15rem;
 }
-
-
 
 /* ---------------------------------------Media Queries */
 /* ------------------Mobile */
@@ -425,13 +444,13 @@ a .newsletter {
     width: 15rem;
   }
 
-#People-drinking{
+  #People-drinking {
     display: none;
-}
+  }
 
-#beer-bottles {
+  #beer-bottles {
     display: none;
-}
+  }
 
   a.nav-link {
     text-align: center;
@@ -474,6 +493,12 @@ a .newsletter {
     position: relative;
     float: left;
   }
+
+  .fa-newspaper {
+    color: black;
+    padding-left: 0;
+    padding-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -482,7 +507,7 @@ a .newsletter {
     border: 3px solid black;
   }
 
-/* I found the box shadow blended to much on smaller devices so I changed the shadow to a border of the same colour */
+  /* I found the box shadow blended to much on smaller devices so I changed the shadow to a border of the same colour */
 
   .card-london {
     box-shadow: none;
@@ -501,15 +526,15 @@ a .newsletter {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-    #People-drinking {
+  #People-drinking {
     display: none;
-}
+  }
 
-#beer-bottles {
+  #beer-bottles {
     display: none;
-}
+  }
 
-#directions-panel {
+  #directions-panel {
     width: 100% !important;
     margin-bottom: 5rem !important;
   }
@@ -533,7 +558,4 @@ a .newsletter {
     position: relative;
     float: left;
   }
-
 }
-
-

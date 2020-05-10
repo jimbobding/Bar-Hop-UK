@@ -1,6 +1,8 @@
-Pics - Manchester -https://www.visitmanchester.com/
-London - https://www.cityam.com/
-liverpool - https://www.wikiwand.com/
+
+<p align="center">
+  <img width="100%" height="90%" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Bar Hop UK Logo Guy.png">
+</p>
+
 
 # My Idea
 
@@ -74,7 +76,7 @@ sites that helped me with my colour schemes
 
 #### 0e9594 - Blue Chill 
 
-Was used for both header and footer of the app
+Was used for both header and footer of the app.
 
 #### FED715
 
@@ -170,8 +172,23 @@ off the app.
 
 1. I removed the pictures and found out that the app functioned a lot better without the pictures, making it easier to navigate.
 2. I used back up pictures that I had, finding that [webp](https://en.wikipedia.org/wiki/WebP#Restrictions) image files did not work.
-3. third
-4. The logo button had a transform animation on it that went from scale .9 - 2, I changed this to .5 -1. This did not push the modal off the screen.
+3. The logo button had a transform animation on it that went from scale .9 - 2, I changed this to .5 -1. This did not push the modal off the screen.
+4. unresolved 
+
+
+After testing I believe the site functions works well for a ueser.
+
+- The maps all display properly.
+- The find you closest breweies section functions properly.
+- All the waypoint brewery pages function proplerly.
+- The Navbar function worked and the links all taking the user to the corrct place.
+- The email modal worked across all browsers.
+
+I had to make some minor aesthetic changes to the site after viewing in different sizes like as I mentoed above removing certain pictures as they 
+spoilt the UI. With more time I would work out away to resolve teh issue. I lso changed certain parts of my code to keep teh UI smooth across all
+devices.
+
+
 
 ## Wireframe
 
@@ -184,20 +201,29 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 ## Functuionality
 
-1. The navigation bar allows you to navigate through the index page of the app.
-2. Breweries near you - Enclosed in a Bootstrap card.
-
+1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/)
+ allows you to navigate through the index page of the app.
+- It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
+2. [About]() - A brief description of th site.
+3. [Breweries near you]() - Enclosed in a Bootstrap card.
 - A map that uses the user's location using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to find breweries close to that location.
 - Locations appear on the map in the form of markers.
 - Each marker is clickable which displays information on the brewery including a  website URL which takes the user to the venue's website on a separate web page.
-
-3. Cities - enclosed in three separate Bootstrap cards
-
-- Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a starting brewery a finishing brewery and choose from a list of several breweries on the way.
+4. [Cities]() - enclosed in three separate Bootstrap cards
+ Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a starting brewery a finishing brewery and choose from a list of several breweries on the way.
 - A route is plotted showing the user the way and calculating the distance.
-
-4. Newsletter modal - a Bootstrap modal allowing the user to sign up for a newsletter.
+5. [Newsletter]() modal - a Bootstrap modal allowing the user to sign up for a newsletter.
    -EmailJs is used to send a reply to the user.
+6. [Bar Hop UK]()/ What we offer. A column of bootstrap cards with images of what can be obtained from visiting breweries through the app.
+- Each card will have a picture and some text
+- One of the cards will be hyperlink to a seperate website. It is a beers server webbsite that has information on people wanting to get into the beer industry. The website will open on a new page.
+- The middle card will be a logo picture of the site and will be an a linkl back to the top of the page.
+7. [Footer])(), the footer will hold the social media links. All links will lead to the home page of the social media site, I have not mafde up links for this app.
+- Facebook
+- Twitter
+- Linkedin
+- Youtube
+
 
 ## Deployment 
 
