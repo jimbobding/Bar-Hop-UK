@@ -72,9 +72,13 @@ sites that helped me with my colour schemes
 [Scheme Color](https://www.schemecolor.com/pop-art.php)
 [color Hunter](http://www.colorhunter.com/)
 
+#### 0e9594 - Blue Chill 
+
+Was used for both header and footer of the app
+
 #### FED715
 
-#### 0e9594 - Blue Chill
+
 
 ### Logo's
 
@@ -86,7 +90,7 @@ I used the logos throughout the app in keeping with the comic esque theme. Both 
 </p>
 
 <p align="center">
-  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images//Bar Hop UK logo.png">
+  <img width="150" height="100" src="https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images//Bar-Hop-UK logo 2.png">
 </p>
 
 ## Technologies used
@@ -115,16 +119,41 @@ For testing, I used the [goggle chrome development tools](https://developers.goo
 variety of screen sizes for Responsiveness, design and user experience. Although on chrome development tools, the app appeared to work across all
 screen sizes on using my iPhone and iPad I found some problems.
 
+For the actual task of testing I went through each device and used all the functions on the app. This was to check out the aesthetics and functionality 
+off the app.
+
 ### Devices used for testing 
 
-1. MacBook pro
-2. iPad
-3. iPhone
+#### In google chrome dev tools
 
 
-1. Chrome 
-2. Safari
-3. third
+- Moto G4 
+- Galaxy S5
+- Pixel 2 
+- Pixel 2 XL
+- iPhone 5/SE  
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone x 
+- iPad
+- iPad Pro
+
+#### My personal aplliances
+
+- MacBook pro 
+- iPad
+- iPhone
+
+ #### Browswers 
+
+ some of the browsers were tested on [Lambdatest](https://app.lambdatest.com/console/realtime) whoch allowed me to test in real time across different browsers.
+
+- Chrome
+- Safari
+- Internet explorer - windows 8.1 & 10
+- firefox windows - windows 8.1
+- Edge - windows 10 
+
 
 
 
@@ -133,6 +162,8 @@ screen sizes on using my iPhone and iPad I found some problems.
 1. Images on the landing page that are not attached to bootstrap cards appear out of focus on iPhone and Ipad.
 2. Certain Images on the Bootstrap card do not show although the ALT description does show up. (This was on safari browser)
 3. My modal email pop up would not stay on the page on smaller devices.
+4. on Edge widows 8.1 the colour on teh about section did not show up.
+
 
 
 #### Resolution

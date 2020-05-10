@@ -920,3 +920,5 @@ size: 5rem;
                 class="logo bar-hop-logo"
                 alt="Bar-Hop-UK"
               />
+
+              id="premium"
