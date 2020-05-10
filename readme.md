@@ -59,8 +59,9 @@ this to be an app mainly used on portable devices.
 
 ### Fonts
 
-The main font I settled on was [Bangers](https://fonts.google.com/specimen/Bangers), I felt it gave a playful almost comic book look which I liked
+The main fonts I settled on was [Bangers](https://fonts.google.com/specimen/Bangers) and [Playfair and display](https://fonts.google.com/specimen/Playfair+Display), I felt they  gave a playful almost comic book look which I liked
 and felt a theme based around fun and good times would work for an app that was in a sense promoting good times.
+
 
 ### Colours
 
@@ -201,11 +202,11 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 ## Functuionality
 
-1. The navigation bar
+1. [The navigation bar](function-images/About.png)
  allows you to navigate through the index page of the app.
 - It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
 2. About - A brief description of th site.
-3. Breweries near you(https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Breweries near you .png) - Enclosed in a Bootstrap card.
+3. Breweries near you - Enclosed in a Bootstrap card.
 - A map that uses the user's location using [google-geolocation] to find breweries close to that location.
 - Locations appear on the map in the form of markers.
 - Each marker is clickable which displays information on the brewery including a  website URL which takes the user to the venue's website on a separate web page.
@@ -250,6 +251,27 @@ I can still edit the site remotely from my gitpod workspace by making changes co
 
 ## Credits 
 
+### Code
+
 - The navigation bar, cards, modal and mobile first framework all from Bootstrap
-- The maps and code that came with the breweries near you locater came from this site [https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4]
-- third
+- The maps and code that go with the breweries near you locater came from [here] (https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including html, css and javasript was obtained from this site and then modified by myself)
+- The maps and code that go with the cities maps came from [here](https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints). (all code including html, css and javasript was obtained from this site and then modified by myself)
+
+### websites
+
+All websites I used for refernce and guidance.
+
+- [stackoverflow](https://stackoverflow.com/)
+- [googlemaps API](https://cloud.google.com/maps-platform/)
+- [w3schools](https://www.w3schools.com/)
+- [csstricks](https://css-tricks.com/)
+
+
+### Images
+
+- Images where all obtained through google searches. 
+
+
+### Special Thanks
+
+- I want like to gove a special mention to all the people at Code Institute in particular the Tutor support team and my Mentor Aaron Sinnot.
