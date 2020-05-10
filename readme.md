@@ -201,24 +201,24 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 ## Functuionality
 
-1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images/funtion images/About.png)
+1. The navigation bar
  allows you to navigate through the index page of the app.
 - It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
-2. [About](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/About.png) - A brief description of th site.
-3. [Breweries near you](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Breweries near you .png) - Enclosed in a Bootstrap card.
-- A map that uses the user's location using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to find breweries close to that location.
+2. About - A brief description of th site.
+3. Breweries near you(https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Breweries near you .png) - Enclosed in a Bootstrap card.
+- A map that uses the user's location using [google-geolocation] to find breweries close to that location.
 - Locations appear on the map in the form of markers.
 - Each marker is clickable which displays information on the brewery including a  website URL which takes the user to the venue's website on a separate web page.
-4. [Cities]() - enclosed in three separate Bootstrap cards
+4. Cities - enclosed in three separate Bootstrap cards
  Allows users to go into three different maps of cities London, Manchester and Liverpool and plan a journey including a starting brewery a finishing brewery and choose from a list of several breweries on the way.
 - A route is plotted showing the user the way and calculating the distance.
-5. [Newsletter]() modal - a Bootstrap modal allowing the user to sign up for a newsletter.
+5. Newsletter modal - a Bootstrap modal allowing the user to sign up for a newsletter.
    -EmailJs is used to send a reply to the user.
-6. [Bar Hop UK]()/ What we offer. A column of bootstrap cards with images of what can be obtained from visiting breweries through the app.
+6. Bar Hop UK/ What we offer. A column of bootstrap cards with images of what can be obtained from visiting breweries through the app.
 - Each card will have a picture and some text
 - One of the cards will be hyperlink to a seperate website. It is a beers server webbsite that has information on people wanting to get into the beer industry. The website will open on a new page.
 - The middle card will be a logo picture of the site and will be an a linkl back to the top of the page.
-7. [Footer])(), the footer will hold the social media links. All links will lead to the home page of the social media site, I have not mafde up links for this app.
+7. Footer, the footer will hold the social media links. All links will lead to the home page of the social media site, I have not mafde up links for this app.
 - Facebook
 - Twitter
 - Linkedin
@@ -248,3 +248,8 @@ I can still edit the site remotely from my gitpod workspace by making changes co
 3. third
 
 
+## Credits 
+
+- The navigation bar, cards, modal and mobile first framework all from Bootstrap
+- The maps and code that came with the breweries near you locater came from this site [https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4]
+- third
