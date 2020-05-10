@@ -201,11 +201,11 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 ## Functuionality
 
-1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/)
+1. [The navigation bar](https://github.com/jimbobding/Bar-Hop-Uk/tree/master/assets/images/Landing:nav.png)
  allows you to navigate through the index page of the app.
 - It will have 6 sections - About, Breweries near you, Cities, Newsletter, Bar Hop UK
-2. [About]() - A brief description of th site.
-3. [Breweries near you]() - Enclosed in a Bootstrap card.
+2. [About](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/About.png) - A brief description of th site.
+3. [Breweries near you](https://github.com/jimbobding/Bar-Hop-Uk/blob/master/assets/images/Breweries near you .png) - Enclosed in a Bootstrap card.
 - A map that uses the user's location using [google-geolocation](https://developers.google.com/maps/documentation/geolocation/intro) to find breweries close to that location.
 - Locations appear on the map in the form of markers.
 - Each marker is clickable which displays information on the brewery including a  website URL which takes the user to the venue's website on a separate web page.
