@@ -71,6 +71,35 @@ li a:hover {
   color: red !important;
 }
 
+.bouncy {
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+   0% {
+    top: 0em;
+  }
+   40% {
+    top: 0em;
+  }
+   43% {
+    top: -0.9em;
+  }
+   46% {
+    top: 0em;
+  }
+   48% {
+    top: -0.4em;
+  }
+   50% {
+    top: 0em;
+  }
+   100% {
+    top: 0em;
+  }
+}
+
 /* ----------------------------------------Landing */
 
 .landing-container {
@@ -81,7 +110,7 @@ li a:hover {
 
 .about-container {
   border: 1px solid black;
-  background-color: #3ECBFF;
+  background-color: #3ecbff;
   padding: 5px;
   text-align: center;
 }
@@ -94,7 +123,7 @@ li a:hover {
 
 .breweries-near-container {
   border: 1px solid black;
-  background-color: #FF6A4C;
+  background-color: #ff6a4c;
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -166,8 +195,6 @@ a {
 
 /* ----------------------------------------Cards */
 
-
-
 .card-text {
   text-align: center;
   font-size: 24px;
@@ -209,6 +236,15 @@ p.card-text a:hover {
   background-color: #0e9594;
 }
 
+.card-offering-text {
+    height: 80px;
+    font-size: 25px
+}
+
+.class-offering-img {
+    height: 210px;
+}
+
 /* ----------------------------------------Headings */
 
 .landing-heading {
@@ -246,8 +282,8 @@ p.card-text a:hover {
 }
 
 .manchester-container {
-    padding-right: 20px;
-    margin-right: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
 }
 
 /* ----------------------------------------Cities/Map pages */
@@ -297,14 +333,12 @@ p.card-text a:hover {
   float: right;
   width: 250px;
   border: 2px solid black;
-  
-} 
+}
 
 #start {
   background-color: #48a4d6;
   color: white;
   border: 1px solid black;
-  
 }
 
 #end {
@@ -387,9 +421,10 @@ a .newsletter {
   transform: scale(1);
 }
 
-.about-container, p {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.about-container,
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* ----------------------------------------Footer */
@@ -549,7 +584,6 @@ a .newsletter {
   #right-panel {
     width: 100% !important;
     padding-right: 3rem;
-   
   }
 
   #map {
@@ -563,5 +597,7 @@ a .newsletter {
   }
 }
 
-
- 
+.bouncy {
+   animation: bouncy 5s infinite linear;
+   position: relative;
+}
