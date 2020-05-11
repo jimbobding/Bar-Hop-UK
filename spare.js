@@ -932,3 +932,22 @@ size: 5rem;
   width: auto;
   justify-content: center;
 }
+
+
+   <div class="card text-center card-offering">
+        <div class="card-body meet-new-card">
+          <h5 class="card-title">Become a scicerone</h5>
+          <p class="card-text">
+            Would you like to become a cerrtified beer server?
+          </p>
+          <a
+            href="https://www.cicerone.org/us-en/certifications/certified-beer-server"
+            target="_blank"
+            ><img
+              src="assets/images/cicerone.jpeg"
+              class="card-img-top"
+              alt="cicerone beer server logo"
+          /></a>
+          <p class="card-text"></p>
+        </div>
+      </div>
