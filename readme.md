@@ -200,6 +200,37 @@ I had to make some minor aesthetic changes to the site after viewing in differen
 devices.
 
 
+## Map testing
+
+To test out the maps on my app I first tested them myself in different locations and also sent the app out to friends to get feedback on the functionality. All reviews came back positive.
+This was both n the UK and in Australia.
+
+## Users guidance
+
+### Breweries near you
+
+1. Choose the breweries near you tab on the navigation bar or scroll down the page to the breweries near you section.
+2. Click on the breweries near you card, you can click on either the text or the picture. 
+3. This will take you t a new page. 
+4. On the new page, you will be asked if the by the browser to share your location. 
+5. If you deny the use of the location the app will not work.
+6. If you accept to share your location a map will load displaying the closest breweries/beer related bars in your proximity (up to 50KM).
+7. Each brewery will be shown by a marker corresponding to its address on the map, if you click on a marker a side panel will pop up displaying a picture of the venue as well as information, including address, website and phone number.
+8. If you click the website link, a new web tab will open for the website of the venue chosen.
+9. To leave the page you can click on any of the links in the navigation bar to take you to various other parts of the app.
+
+### Cities map
+
+1. Choose the cities to tab on the navigation bar or scroll down the page to the cities section.
+2. Choose what city you would like to view and click n that card, you can click on either the text or the picture. 
+3. This will take you t a new page.
+4. You will see a map and a brewery locator/directions pannel. On a desktop it will be to the right-hand side of the map on a portable device it will be underneath the map.
+5. In the locator choose the brewery you would like to start at.
+6. Then choose from the waypoint brewery section how many breweries you would like to visit (holding the command key to make multiple selections on a desktop).
+7. Then choose from a brewery in the finishing brewery section.
+8. click the submit. A route will be plotted and displayed on the map and the direction will appear in the directions pannel.
+9. To leave the page you can click on any of the links in the navigation bar to take you to various other parts of the app.
+
 
 ## Wireframe
 
