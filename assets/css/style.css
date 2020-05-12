@@ -177,9 +177,10 @@ a {
 /* ----------------------------------------Maps */
 
 #breweries-map {
-  height: 500px;
+  height: 100vh;
   border: 1px solid black;
   width: 100%;
+
 }
 
 #map {
@@ -329,8 +330,7 @@ p.card-text a:hover {
   margin-top: 10px;
   padding: 10px;
   overflow: scroll;
-  height: 380px;
-  float: right;
+  height: 275px;
   width: 250px;
   border: 2px solid black;
 }
@@ -435,8 +435,8 @@ p {
   height: 70px;
   background-color: #0e9594;
   border: 2px black solid;
-  z-index: 3;
-  padding-left: -15px;
+
+
 }
 
 .newsletter-container {
@@ -463,6 +463,36 @@ p {
 }
 
 /* ---------------------------------------What we offer cards */
+
+
+a.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    border-radius: 0.12em;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+
+}
+
+a.button1:hover {
+    color: white;
+    background-color: black;
+}
+
+@media all and (max-width:30em) {
+    a.buttton1 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+
 
 .card-title {
   text-align: center;
@@ -493,7 +523,7 @@ p {
 
   .logo {
     text-align: center;
-    size: 5rem;
+   
   }
 
   #beer-pic {
@@ -597,7 +627,5 @@ p {
   }
 }
 
-.bouncy {
-   animation: bouncy 5s infinite linear;
-   position: relative;
-}
+
+

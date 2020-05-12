@@ -257,8 +257,9 @@ to actual coding as certain things did not look at good as I hoped, but overall 
    -EmailJs is used to send a reply to the user.
 6. Bar Hop UK/ What we offer. A column of bootstrap cards with images of what can be obtained from visiting breweries through the app.
 - Each card will have a picture and some text
-- One of the cards will be a hyperlink to a separate website. It is a beers server website that has information on people wanting to get into the beer industry. The website will open on a new page.
+- One of the cards will be a hyperlink to a separate website. It is a beers server website that has information on people wanting to get into the beer industry. The website will open on a new page. I will add a button to this card so people can see it is a call to action card.
 - The middle card will be a logo picture of the site and will be a link back to the top of the page.
+- Both of thes card will be in the midle of the other cards in the sectionand fall slightly out of sequence, this was an aesthetic choice and also it gives the user a clearer indictation tat these cards have functions.
 7. Footer, the footer will hold social media links. All links will lead to the home page of the social media site, I have not made up links for this app.
 - Facebook
 - Twitter
@@ -290,6 +291,7 @@ I can still edit the site remotely from my gitpod workspace by making changes co
 - The navigation bar, cards, modal and mobile-first framework all from Bootstrap
 - The maps and code that go with the breweries near you locater came from [here] (https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
 - The maps and code that go with the cities maps came from [here](https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
+- The code for the autio reply email was taught to me on the [Code Institue Course web devolpment course](https://courses.codeinstitute.net/program/FullstackWebDeveloper) apart from the code for closing the modal and clearing the input fields which was from [stackoverflow](https://stackoverflow.com/)
 
 ### websites
 
@@ -308,4 +310,8 @@ All websites I used for reference and guidance.
 
 ### Special Thanks
 
-- I would like to give a special mention to all the people at Code Institute, in particular, the Tutor support team and my Mentor Aaron Sinnot.
+- I would like to give a special mention to all the people on slack and all the people Code Institute, in particular the Tutor support team and my Mentor Aaron Sinnot.
+
+### Disclaimer 
+
+This app/site was made for a project for the second milestone project on  [Code Institue Course web devolpment course](https://courses.codeinstitute.net/program/FullstackWebDeveloper) by myself James Graham David. 

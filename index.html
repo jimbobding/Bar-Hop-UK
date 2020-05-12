@@ -62,7 +62,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"><i class="fas fa-beer"></i></span>
+       <i class="fas fa-beer"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <a href="index.html">
@@ -131,13 +131,10 @@
       <div class="row">
         <div class="col-md-6 offset-md-3 col-xs-4">
           <p>
-            Bar Hop UK, is your friend in the quest to find good beer in the UK.
-            we believe in good beer and we believe in supporting local buisness.
-            We give you the tools to find local breweries in your area or in
-            other areas you may wwant to visit. We also now that drinking alone
-            is not always what it is cracked to up to be and are offering
-            drinking tours around selected breweries. Allowing you to experience
-            local craft breweries and meet new people .
+            Bar Hop UK is your friend in the quest to find good beer in the UK.
+            we believe in good beer and we believe in supporting local business.
+            We give you the tools to find local breweries in your area or in other areas you may want to visit. We also now that drinking alone is not always what it is cracked to up to be and are offering drinking tours around selected breweries. Allowing you to experience
+            local craft breweries and meet new people.
           </p>
         </div>
       </div>
@@ -163,10 +160,9 @@
       <div class="row">
         <div class="col-md-6 offset-md-3 col-xs-4">
           <p>
-            Breweries near you! Desighned to find the closest breweries near
-            your current location. Relying on geoloacation transmited through
-            your phone we can point you to the closest breweries and craft tap
-            tap rooms in your area.
+            Breweries near you! Designed to find the closest breweries near your current location. Relying on geolocation transmitted through
+            your device we can point you to the closest breweries and craft tap
+            taprooms in your area.
           </p>
         </div>
       </div>
@@ -285,7 +281,8 @@
               data-dismiss="modal"
               aria-label="Close"
             >
-              <span aria-hidden="true"><i class="fas fa-beer"></i></span>
+          
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
@@ -296,7 +293,7 @@
             </h3>
             <h5 class="uppercase text-center">Lets drink together!</h5>
             <div class="center-form">
-              <form onsubmit="return sendMail(this);">
+              <form onsubmit="return sendMail(this);" id="onSubmit" >
                 <input
                   type="text"
                   name="name"
@@ -351,10 +348,9 @@
           <h1 class="premium-header"></h1>
 
           <p>
-            Being part of our app will bring you as close to the world of craft
-            beer as you want to be. Our monthly newsletter will bring you
-            informatiom on organised tours and tastings, craft festivals and get
-            you in touch with people of simmilar crafty minds.
+            Being part of our app will bring you as close to the world of craft beer as you want to be. Our monthly newsletter will bring you
+            information on organised tours and tastings, craft festivals and get
+            you in touch with people of similar crafty minds.
           </p>
         </div>
       </div>
@@ -426,9 +422,8 @@
 
         <div >
           <h5 class="card-title">Become a scicerone</h5>
-          <p class="card-text">
-          <a href="something" class="button1 bouncy">Facebark</a>
-          </p>
+          
+   <a href="something" class="button1">Another button</a>
           <a
             href="https://www.cicerone.org/us-en/certifications/certified-beer-server"
             target="_blank"
