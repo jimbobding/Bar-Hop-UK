@@ -310,7 +310,7 @@ This information can be obtained from [Github](https://help.github.com/en/github
 ### Code
 
 - The navigation bar, cards, modal and mobile-first framework all from Bootstrap
-- The maps and code that go with the breweries near you locater came from [here] (https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
+- The maps and code that go with the breweries near you locater came from [here](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#4). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
 - The maps and code that go with the cities maps came from [here](https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints). (all code including HTML, CSS and javascript was obtained from this site and then modified by myself)
 - The code for the auto-reply email was taught to me on the [Code Institue Course web development course](https://courses.codeinstitute.net/program/FullstackWebDeveloper) apart from the code for closing the modal and clearing the input fields which was from [stackoverflow](https://stackoverflow.com/)
 - The button for the become a cicerone card was used with code obtained from  [here](https://fdossena.com/?p=html5cool/buttons/i.frag)
@@ -328,6 +328,7 @@ All websites I used for reference and guidance.
 ### Images
 
 - Images were all obtained through google searches. 
+- [BeFunky](https://www.befunky.com/features/graphic-designer/) was used to put effects over  the landing image to make it look more cartoon like.
 
 
 ### Special Thanks
