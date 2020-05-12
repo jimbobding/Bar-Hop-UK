@@ -1,508 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/53108b937c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_8FmYcOiKwGhh65a0xmExM");
-      })();
-    </script>
-
-    <title>Bar Hop UK</title>
-  </head>
-  <body>
-    <!------------------------Navbar----------------------------->
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <button
-        class="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-       <i class="fas fa-beer"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <a href="index.html">
-          <div class="logo">
-            <div id="BarHop-logo">
-              <img
-                src="assets/images/Bar Hop UK logo.png"
-                class="logo bar-hop-logo"
-                alt="Bar-Hop-UK"
-              />
-            </div></div
-        ></a>
-
-        <ul class="navbar-nav ml-auto nav-list">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#nearyou">Breweries near you</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cities">Cities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#newsletter">Newsletter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#BarHopUk">Bar Hop UK</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!------------------------Landing page image----------------------------->
-    <div id="People-drinking">
-      <div class="container-fluid landing-container">
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <h1 class="landing-heading">Bar Hop UK</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------About heading----------------------------->
-
-    <h2 class="about-heading" id="about">About</h2>
-
-    <!------------------------About icon----------------------------->
-
-    <div class="col d-flex justify-content-center">
-      <a href="index.html"
-        ><img
-          src="assets/images/Bar-Hop-UK logo 2.png"
-          class="logo about-logo"
-          alt="Bar Hop UK"
-      /></a>
-    </div>
-
-    <!------------------------About copy----------------------------->
-
-    <div class="container-fluid about-container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 col-xs-4">
-          <p>
-            Bar Hop UK is your friend in the quest to find good beer in the UK.
-            we believe in good beer and we believe in supporting local business.
-            We give you the tools to find local breweries in your area or in other areas you may want to visit. We also now that drinking alone is not always what it is cracked to up to be and are offering drinking tours around selected breweries. Allowing you to experience
-            local craft breweries and meet new people.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------Page break up/beer bottle image----------------------------->
-
-    <div class="container-fluid">
-      <div id="beer-bottles"></div>
-    </div>
-    <!------------------------Breweries near you section/ Heading & copy----------------------------->
-
-    <h2 class="breweries-near-heading" id="nearyou">Breweries Near You</h2>
-    <div class="col d-flex justify-content-center">
-      <a href="index.html"
-        ><img
-          src="assets/images/Bar-Hop-UK logo 2.png"
-          class="logo about-logo"
-          alt="Bar Hop UK"
-      /></a>
-    </div>
-    <div class="container-fluid breweries-near-container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 col-xs-4">
-          <p>
-            Breweries near you! Designed to find the closest breweries near your current location. Relying on geolocation transmitted through
-            your device we can point you to the closest breweries and craft tap
-            taprooms in your area.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------Breweries near you section card----------------------------->
-
-    <div class="container-fluid brewery-card-container">
-      <div class="row">
-        <div class="col justify-content-center d-flex">
-          <div class="card card-breweries-near" style="width: 18rem;">
-            <a href="breweries-near-you.html"
-              ><img
-                src="assets/images/brewery-pic.jpg"
-                class="card-img-top"
-                alt="Inside a brewery"
-                height="214px;"
-            /></a>
-            <div class="card card-body">
-              <p class="card-text">
-                <a href="breweries-near-you.html">Breweries Near You</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------Cities jumbotron heading----------------------------->
-
-    <h2 class="cities-heading jumbotron jumbotron-cities" id="cities">
-      Cities
-    </h2>
-
-    <!------------------------Cities cards----------------------------->
-
-    <div class="container-fluid cities-container">
-      <div class="row no-gutters">
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card card-london" style="width: 18rem;">
-            <a href="london.html"
-              ><img
-                src="assets/images/london-2.jpg"
-                class="card-img-top"
-                alt="Tower bridge in London"
-                height="214px;"
-            /></a>
-            <div class="card card-body">
-              <p class="card-text">
-                <a href="london.html">London</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card card-manchester" style="width: 18rem;">
-            <a href="manchester.html">
-              <img
-                src="assets/images/manchester- night.jpg"
-                class="card-img-top"
-                alt="Buildings in Mnachester"
-                height="214px;"
-            /></a>
-            <div class="card-body">
-              <p class="card-text">
-                <a href="manchester.html"> Manchester</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card card-liverpool" style="width: 18rem;">
-            <a href="liverpool.html">
-              <img
-                src="assets/images/liverpool.jpeg"
-                class="card-img-top"
-                alt="Buildings in Liverpool"
-                height="214px;"
-            /></a>
-            <div class="card-body">
-              <p class="card-text">
-                <a href="liverpool.html">
-                  Liverpool
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- /.Modal ----------------------------------->
-
-    <!-- Button to Open the Modal -->
-    <div id="newsletter"></div>
-    <div class="container newsletter-container">
-      <a href="#signUpModal" data-toggle="modal" data-target="#myModal"
-        ><h3 class="newsletter">
-          <i class="fas fa-newspaper"></i>Newsletter<i
-            class="fas fa-newspaper"
-          ></i></h3
-      ></a>
-    </div>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Bar Hop Uk</h4>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+         type="text/css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://kit.fontawesome.com/53108b937c.js"
+         crossorigin="anonymous"
+         ></script>
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+         ></script>
+      <script type="text/javascript">
+         (function () {
+           emailjs.init("user_8FmYcOiKwGhh65a0xmExM");
+         })();
+      </script>
+      <title>Bar Hop UK</title>
+   </head>
+   <body>
+      <!------------------------Navbar----------------------------->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
             >
-          
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <h3 class="contact-heading uppercase text-center">
-              Sign up for our monthly newsletter!
-            </h3>
-            <h5 class="uppercase text-center">Lets drink together!</h5>
-            <div class="center-form">
-              <form onsubmit="return sendMail(this);" id="onSubmit" >
-                <input
-                  type="text"
-                  name="name"
-                  id="fullname"
-                  class="form-control"
-                  placeholder="Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="emailaddress"
-                  class="form-control"
-                  placeholder="Email"
-                  required
-                />
-
-                <!-- Modal footer -->
-
-                <div class="form-row text-center">
-                  <div class="col">
-                    <button type="submit" class="btn btn-signup btn-secondary">
-                      Sign Up!
-                    </button>
+         <i class="fas fa-beer"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="index.html">
+               <div class="logo">
+                  <div id="BarHop-logo">
+                     <img
+                        src="assets/images/Bar Hop UK logo.png"
+                        class="logo bar-hop-logo"
+                        alt="Bar-Hop-UK"
+                        />
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    data-dismiss="modal"
+               </div
                   >
-                    Close
-                  </button>
-                </div>
-              </form>
+            </a>
+            <ul class="navbar-nav ml-auto nav-list">
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#nearyou">Breweries near you</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#cities">Cities</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#newsletter">Newsletter</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#BarHopUk">Bar Hop UK</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!------------------------Landing page image----------------------------->
+      <div id="People-drinking">
+         <div class="container-fluid landing-container">
+            <div class="row">
+               <div class="col d-flex justify-content-center">
+                  <h1 class="landing-heading">Bar Hop UK</h1>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-
-    <!------------------------Join up/What we offer section ----------------------------->
-    <div id="BarHopUk"></div>
-    <h2 class="barhop-heading jumbotron jumbotron-barhop">
-      Bar Hop UK
-    </h2>
-
-    <div class="container barhop-container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="premium-header"></h1>
-
-          <p>
-            Being part of our app will bring you as close to the world of craft beer as you want to be. Our monthly newsletter will bring you
-            information on organised tours and tastings, craft festivals and get
-            you in touch with people of similar crafty minds.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!------------------------Join up/What we offer cards ----------------------------->
-
-    <div class="card-columns">
-      <div class="card card-offering">
-        <img
-          src="assets/images/cider-tasting-flights.jpg"
-          class="card-img-top class-offering-img"
-          alt="tasting flight of beers"
-        />
-        <div class="card-body card-offering">
-        
-          <p class="card-text card-offering-text">
-            Taste a range of beers at each brewery.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="card card-offering ">
-        <img
-          src="assets/images/Edinburgh.jpg"
-          class="card-img-top class-offering-img"
-          alt="Edinburgh skyline"
-          
-        />
-        <div class="card-body card-offering">
-        
-          <p class="card-text card-offering-text">
-            More breweries in more cities to come.
-          </p>
-        </div>
-      </div>
-
-
-     <div class="card card-offering">
-      
-        <img
-          src="assets/images/brewery tours 2.jpg"
-          class="card-img-top class-offering-img"
-          alt="People brewing beer"
-        />
-        <div class="card-body card-offering">
-         
-          <p class="card-text card-offering-text">
-            Tour breweries and meet brewers.
-          </p>
-        </div>
-      </div>
-      
-
-      <!-------Logo------>
-
-      <div class="card text-center p-3 logo-card">
-        <a href="index.html">
-          <img
-            src="assets/images/Bar Hop UK logo.png"
-            class="logo bar-hop-footer"
-            alt="Bar-Hop-UK"
-        /></a>
-      </div>
-      <div class="card text-center card-offering">
-
-      <!-------Become a cicerone link------>
-
-        <div >
-          <h5 class="card-title">Become a scicerone</h5>
-          
-   <a href="something" class="button1">Another button</a>
-          <a
-            href="https://www.cicerone.org/us-en/certifications/certified-beer-server"
-            target="_blank"
+      <!------------------------About heading----------------------------->
+      <h2 class="about-heading" id="about">About</h2>
+      <!------------------------About icon----------------------------->
+      <div class="col d-flex justify-content-center">
+         <a href="index.html"
             ><img
-              src="assets/images/cicerone.jpeg"
-              class="card-img-top"
-              alt="cicerone beer server logo"
-          /></a>
-          <p class="card-text"></p>
-        </div>
+            src="assets/images/Bar-Hop-UK logo 2.png"
+            class="logo about-logo"
+            alt="Bar Hop UK"
+            /></a>
       </div>
-
-<div class="card card-offering">
-        <img
-          src="assets/images/meet-new-people.jpg"
-          class="card-img-top class-offering-img"
-          alt="People enjoying beer"
-        />
-        <div class="card-body card-offering">
-        
-          <p class="card-text card-offering-text">
-            Meet people who love craft beer.
-          </p>
-        </div>
+      <!------------------------About copy----------------------------->
+      <div class="container-fluid about-container">
+         <div class="row">
+            <div class="col-md-6 offset-md-3 col-xs-4">
+               <p>
+                  Bar Hop UK is your friend in the quest to find good beer in the UK.
+                  we believe in good beer and we believe in supporting local business.
+                  We give you the tools to find local breweries in your area or in other areas you may want to visit. We also now that drinking alone is not always what it is cracked to up to be and are offering drinking tours around selected breweries. Allowing you to experience
+                  local craft breweries and meet new people.
+               </p>
+            </div>
+         </div>
       </div>
-
-      <div class="card card-offering">
-       <img
-          src="assets/images/home brew.jpg"
-          class="card-img-top class-offering-img"
-          alt="Brewer giving a brewery tour"
-        />
-        <div class="card-body card-offering">
-        
-          <p class="card-text card-offering-text">
-           Learn to home brew
-          </p>
-        </div>
+      <!------------------------Page break up/beer bottle image----------------------------->
+      <div class="container-fluid">
+         <div id="beer-bottles"></div>
       </div>
-     </div> 
-     
-    <!------------------------Footer----------------------------->
-
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <ul class="list-inline social-links">
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.facebook.com/">
-                <i class="fab fa-facebook-f"></i>
-                <span class="sr-only">Facebook</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://twitter.com/explore">
-                <i class="fab fa-twitter"></i>
-                <span class="sr-only">Twitter</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://uk.linkedin.com/">
-                <i class="fab fa-linkedin-in"></i>
-                <span class="sr-only">Linkedin</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.instagram.com/">
-                <i class="fab fa-instagram"></i>
-                <span class="sr-only">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <!------------------------Breweries near you section/ Heading & copy----------------------------->
+      <h2 class="breweries-near-heading" id="nearyou">Breweries Near You</h2>
+      <div class="col d-flex justify-content-center">
+         <a href="index.html"
+            ><img
+            src="assets/images/Bar-Hop-UK logo 2.png"
+            class="logo about-logo"
+            alt="Bar Hop UK"
+            /></a>
       </div>
-    </div>
-
-    <script src="assets/js/test.js"></script>
-    <script src="assets/js/email.js"></script>
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-  </body>
+      <div class="container-fluid breweries-near-container">
+         <div class="row">
+            <div class="col-md-6 offset-md-3 col-xs-4">
+               <p>
+                  Breweries near you! Designed to find the closest breweries near your current location. Relying on geolocation transmitted through
+                  your device we can point you to the closest breweries and craft tap
+                  taprooms in your area.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!------------------------Breweries near you section card----------------------------->
+      <div class="container-fluid brewery-card-container">
+         <div class="row">
+            <div class="col justify-content-center d-flex">
+               <div class="card card-breweries-near" style="width: 18rem;">
+                  <a href="breweries-near-you.html"
+                     ><img
+                     src="assets/images/brewery-pic.jpg"
+                     class="card-img-top"
+                     alt="Inside a brewery"
+                     height="214px;"
+                     /></a>
+                  <div class="card card-body">
+                     <p class="card-text">
+                        <a href="breweries-near-you.html">Breweries Near You</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!------------------------Cities jumbotron heading----------------------------->
+      <h2 class="cities-heading jumbotron jumbotron-cities" id="cities">
+         Cities
+      </h2>
+      <!------------------------Cities cards----------------------------->
+      <div class="container-fluid cities-container">
+         <div class="row no-gutters">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+               <div class="card card-london" style="width: 18rem;">
+                  <a href="london.html"
+                     ><img
+                     src="assets/images/london-2.jpg"
+                     class="card-img-top"
+                     alt="Tower bridge in London"
+                     height="214px;"
+                     /></a>
+                  <div class="card card-body">
+                     <p class="card-text">
+                        <a href="london.html">London</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+               <div class="card card-manchester" style="width: 18rem;">
+                  <a href="manchester.html">
+                  <img
+                     src="assets/images/manchester- night.jpg"
+                     class="card-img-top"
+                     alt="Buildings in Mnachester"
+                     height="214px;"
+                     /></a>
+                  <div class="card-body">
+                     <p class="card-text">
+                        <a href="manchester.html"> Manchester</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+               <div class="card card-liverpool" style="width: 18rem;">
+                  <a href="liverpool.html">
+                  <img
+                     src="assets/images/liverpool.jpeg"
+                     class="card-img-top"
+                     alt="Buildings in Liverpool"
+                     height="214px;"
+                     /></a>
+                  <div class="card-body">
+                     <p class="card-text">
+                        <a href="liverpool.html">
+                        Liverpool
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.Modal ----------------------------------->
+      <!-- Button to Open the Modal -->
+      <div id="newsletter"></div>
+      <div class="container newsletter-container">
+         <a href="#signUpModal" data-toggle="modal" data-target="#myModal"
+            >
+            <h3 class="newsletter">
+               <i class="fas fa-newspaper"></i>Newsletter<i
+                  class="fas fa-newspaper"
+                  ></i>
+            </h3
+               >
+         </a>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Bar Hop Uk</h4>
+                  <button
+                     type="button"
+                     class="close"
+                     data-dismiss="modal"
+                     aria-label="Close"
+                     >
+                  <span aria-hidden="true"><i class="fas fa-beer"></i></span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <h3 class="contact-heading uppercase text-center">
+                     Sign up for our monthly newsletter!
+                  </h3>
+                  <h5 class="uppercase text-center">Lets drink together!</h5>
+                  <div class="center-form">
+                     <form onsubmit="return sendMail(this);" id="onSubmit" >
+                        <input
+                           type="text"
+                           name="name"
+                           id="fullname"
+                           class="form-control"
+                           placeholder="Name"
+                           required
+                           />
+                        <input
+                           type="email"
+                           name="email"
+                           id="emailaddress"
+                           class="form-control"
+                           placeholder="Email"
+                           required
+                           />
+                        <!-- Modal footer -->
+                        <div class="form-row text-center">
+                           <div class="col">
+                              <button type="submit" class="btn btn-signup btn-secondary">
+                              Sign Up!
+                              </button>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button
+                              type="button"
+                              class="btn btn-danger"
+                              data-dismiss="modal"
+                              >
+                           Close
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!------------------------Join up/What we offer section ----------------------------->
+      <div id="BarHopUk"></div>
+      <h2 class="barhop-heading jumbotron jumbotron-barhop">
+         Bar Hop UK
+      </h2>
+      <div class="container barhop-container">
+         <div class="row">
+            <div class="col-md-6 offset-md-3">
+               <h1 class="premium-header"></h1>
+               <p>
+                  Being part of our app will bring you as close to the world of craft beer as you want to be. Our monthly newsletter will bring you
+                  information on organised tours and tastings, craft festivals and get
+                  you in touch with people of similar crafty minds.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!------------------------Join up/What we offer cards ----------------------------->
+      <div class="card-columns">
+         <div class="card card-offering">
+            <img
+               src="assets/images/cider-tasting-flights.jpg"
+               class="card-img-top class-offering-img"
+               alt="tasting flight of beers"
+               />
+            <div class="card-body card-offering">
+               <p class="card-text card-offering-text">
+                  Taste a range of beers at each brewery.
+               </p>
+            </div>
+         </div>
+         <div class="card card-offering ">
+            <img
+               src="assets/images/Edinburgh.jpg"
+               class="card-img-top class-offering-img"
+               alt="Edinburgh skyline"
+               />
+            <div class="card-body card-offering">
+               <p class="card-text card-offering-text">
+                  More breweries in more cities to come.
+               </p>
+            </div>
+         </div>
+         <div class="card card-offering">
+            <img
+               src="assets/images/brewery tours 2.jpg"
+               class="card-img-top class-offering-img"
+               alt="People brewing beer"
+               />
+            <div class="card-body card-offering">
+               <p class="card-text card-offering-text">
+                  Tour breweries and meet brewers.
+               </p>
+            </div>
+         </div>
+         <!-------Logo------>
+         <div class="card text-center p-3 logo-card">
+            <a href="index.html">
+            <img
+               src="assets/images/Bar Hop UK logo.png"
+               class="logo bar-hop-footer"
+               alt="Bar-Hop-UK"
+               /></a>
+         </div>
+         <div class="card text-center card-offering">
+            <!-------Become a cicerone ------>
+            <div >
+               <h5 class="card-title">Become a scicerone</h5>
+               <!-------Become a cicerone button------>
+               <a href="https://www.cicerone.org/us-en/certifications/certified-beer-server"  target="_blank" class="scicerone-button">Click Here to become a sicerone</a>
+               <!-------Become a cicerone link------>
+               <a
+                  href="https://www.cicerone.org/us-en/certifications/certified-beer-server"
+                  target="_blank"
+                  ><img
+                  src="assets/images/cicerone.jpeg"
+                  class="card-img-top"
+                  alt="cicerone beer server logo"
+                  /></a>
+               <p class="card-text"></p>
+            </div>
+         </div>
+         <!-------Meet new people------>
+         <div class="card card-offering">
+            <img
+               src="assets/images/meet-new-people.jpg"
+               class="card-img-top class-offering-img"
+               alt="People enjoying beer"
+               />
+            <div class="card-body card-offering">
+               <p class="card-text card-offering-text">
+                  Meet people who love craft beer.
+               </p>
+            </div>
+         </div>
+         <!-------Learn how to brew------>
+         <div class="card card-offering">
+            <img
+               src="assets/images/home brew.jpg"
+               class="card-img-top class-offering-img"
+               alt="Brewer giving a brewery tour"
+               />
+            <div class="card-body card-offering">
+               <p class="card-text card-offering-text">
+                  Learn to home brew
+               </p>
+            </div>
+         </div>
+      </div>
+      <!------------------------Footer----------------------------->
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <ul class="list-inline social-links">
+                  <li class="list-inline-item">
+                     <!-------Social media links------>
+                     <a target="_blank" href="https://www.facebook.com/">
+                     <i class="fab fa-facebook-f"></i>
+                     <span class="sr-only">Facebook</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://twitter.com/explore">
+                     <i class="fab fa-twitter"></i>
+                     <span class="sr-only">Twitter</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://uk.linkedin.com/">
+                     <i class="fab fa-linkedin-in"></i>
+                     <span class="sr-only">Linkedin</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://www.instagram.com/">
+                     <i class="fab fa-instagram"></i>
+                     <span class="sr-only">Instagram</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/test.js"></script>
+      <script src="assets/js/email.js"></script>
+      <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+   </body>
 </html>

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers:100,300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-
 body {
-  font-family: "Bangers", sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
+	font-family: "Bangers", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
 }
 
 .about-container,
@@ -13,619 +12,581 @@ body {
 .barhop-container,
 .card-text,
 .brewery-locator {
-  font-family: "Playfair Display", serif;
+	font-family: "Playfair Display", serif;
 }
 
 #People-drinking {
-  background: url("../images/people-drinking.jpg");
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
-  width: auto;
-  justify-content: center;
-  position: relative;
-  border: 3px solid red;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+	background: url("../images/people-drinking.jpg");
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 80vh;
+	width: auto;
+	justify-content: center;
+	position: relative;
+	border: 3px solid red;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
 
 #beer-bottles {
-  background-attachment: fixed;
-  background-image: url("../images/beer-bottles.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: auto;
-  border: 3px solid black;
-  justify-content: center;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+	background-attachment: fixed;
+	background-image: url("../images/beer-bottles.jpg");
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+	width: auto;
+	border: 3px solid black;
+	justify-content: center;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
 
+
 /* ----------------------------------------Navbar */
+
 
 /* I had to use the !important tag on some of the css in the navigation bar to override the some of 
 the built in bootstrap classes */
 
 .bg-light {
-  background-color: #0e9594 !important;
+	background-color: #0e9594 !important;
 }
 
 .bar-hop-logo {
-  height: 6rem;
+	height: 6rem;
 }
 
 li a {
-  font-size: 22px;
-  text-decoration: none;
-  color: white !important;
-  width: 100%;
+	font-size: 22px;
+	text-decoration: none;
+	color: white !important;
+	width: 100%;
 }
 
 li a:hover {
-  color: red !important;
+	color: red !important;
 }
 
-.bouncy {
-  animation: bouncy 5s infinite linear;
-  position: relative;
-}
-
-@keyframes bouncy {
-   0% {
-    top: 0em;
-  }
-   40% {
-    top: 0em;
-  }
-   43% {
-    top: -0.9em;
-  }
-   46% {
-    top: 0em;
-  }
-   48% {
-    top: -0.4em;
-  }
-   50% {
-    top: 0em;
-  }
-   100% {
-    top: 0em;
-  }
-}
 
 /* ----------------------------------------Landing */
 
 .landing-container {
-  padding-top: 20px;
+	padding-top: 20px;
 }
+
 
 /* ----------------------------------------About */
 
 .about-container {
-  border: 1px solid black;
-  background-color: #3ecbff;
-  padding: 5px;
-  text-align: center;
-}
-
-.about-logo {
-  height: 6rem;
-}
-
-/* ----------------------------------------Breweries near you  */
-
-.breweries-near-container {
-  border: 1px solid black;
-  background-color: #ff6a4c;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.brewery-card-container {
-  padding-bottom: 30px;
-}
-
-/* ----------------------------------------Breweries near you/map page */
-
-#panel {
-  height: 100%;
-  width: null;
-  background-color: white;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: all 0.2s ease-out;
-}
-
-.open {
-  width: 250px;
-}
-
-/* Styling for place details */
-.hero {
-  width: 100%;
-  height: auto;
-  max-height: 166px;
-  display: block;
-}
-
-.place,
-p {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.details {
-  color: darkslategrey;
-}
-
-#pannel,
-a {
-  text-decoration: none;
-  color: cadetblue;
-}
-
-/* ----------------------------------------Maps */
-
-#breweries-map {
-  height: 100vh;
-  border: 1px solid black;
-  width: 100%;
-
-}
-
-#map {
-  height: 100vh;
-  border: 1px solid red;
-  padding: 10px;
-  width: 70%;
-  text-align: center;
-  position: relative;
-  float: left;
-  margin-right: 10px;
-}
-
-/* ----------------------------------------Cards */
-
-.card-text {
-  text-align: center;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-p.card-text a {
-  font-size: 30px;
-  text-decoration: none;
-}
-
-p.card-text a:hover {
-  color: red;
-  transition: 1ms;
-}
-
-.card-breweries-near {
-  box-shadow: 10px 10px 20px 10px black;
-}
-
-.card-london {
-  box-shadow: 10px 10px 20px 10px yellow;
-}
-
-.card-manchester {
-  box-shadow: 10px 10px 20px 10px red;
-}
-
-.card-liverpool {
-  box-shadow: 10px 10px 20px 10px blue;
-}
-
-.card-offering {
-  box-shadow: 5px 5px 10px 5px #95a78d;
-}
-
-.logo-card {
-  box-shadow: 5px 5px 10px 5px black;
-  background-color: #0e9594;
-}
-
-.card-offering-text {
-    height: 80px;
-    font-size: 25px
-}
-
-.class-offering-img {
-    height: 210px;
-}
-
-/* ----------------------------------------Headings */
-
-.landing-heading {
-  margin-top: 8rem;
-  font-size: 9rem;
-  color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.cities-heading,
-.barhop-heading {
-  text-align: center;
-  font-size: 65px;
-}
-
-.breweries-near-heading {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.about-heading {
-  text-align: center;
-  font-size: 60px;
-  padding: 10px;
-}
-
-.jumbotron-cities {
-  background-color: rgba(235, 10, 10, 0.5);
-}
-
-.jumbotron-barhop {
-  background-color: #fed715;
-}
-
-.manchester-container {
-  padding-right: 20px;
-  margin-right: 20px;
-}
-
-/* ----------------------------------------Cities/Map pages */
-.cities-container {
-  padding-bottom: 50px;
-}
-
-.city-map-heading {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-#right-panel {
-  line-height: 30px;
-  padding-left: 10px;
-}
-
-#right-panel select,
-#right-panel input {
-  font-size: 15px;
-}
-
-#right-panel select {
-  width: 100%;
-}
-
-#right-panel i {
-  font-size: 12px;
-}
-
-#right-panel {
-  margin: 20px;
-  border-width: 2px;
-  width: 20%;
-  height: 400px;
-  float: left;
-  text-align: left;
-  padding-top: 0;
-  z-index: 3;
-}
-
-#directions-panel {
-  margin-top: 10px;
-  padding: 10px;
-  overflow: scroll;
-  height: 275px;
-  width: 250px;
-  border: 2px solid black;
-}
-
-#start {
-  background-color: #48a4d6;
-  color: white;
-  border: 1px solid black;
-}
-
-#end {
-  background-color: #48a4d6;
-  color: white;
-  border: 1px solid black;
-}
-
-#waypoints {
-  background-color: #48a4d6;
-  color: white;
-}
-
-input#submit {
-  background-color: #eb190d;
-  color: white;
-}
-
-/* ----------------------------------------Modal */
-
-.modal-header {
-  font-size: 50px;
-  color: red;
-}
-
-.fullname {
-  padding-top: 20px;
-}
-
-input#emailaddress {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-input#fullname {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.btn-signup {
-  width: 10rem;
-  background-color: red;
-}
-
-.btn-signup:hover {
-  background-color: black;
-}
-
-.modal-body {
-  box-shadow: 10px 10px 10px 10px #0e9594;
-}
-
-input#fullname.form-control {
-  color: red;
-}
-
-/* ----------------------------------------Newsletter */
-
-a .newsletter {
-  font-size: 50px;
-  color: red;
-}
-
-.newsletter-container {
-  text-align: center;
-}
-
-.fa-newspaper {
-  color: black;
-  padding-left: 15px;
-  padding-right: 10px;
-}
-
-.newsletter {
-  transition: transform 100ms ease-in-out;
-  transform: scale(0.5);
-}
-
-.newsletter:hover {
-  transform: scale(1);
+	border: 1px solid black;
+	background-color: #3ecbff;
+	padding: 5px;
+	text-align: center;
 }
 
 .about-container,
 p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+
+.about-logo {
+	height: 6rem;
+}
+
+
+/* ----------------------------------------Breweries near you  */
+
+.breweries-near-container {
+	border: 1px solid black;
+	background-color: #ff6a4c;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.brewery-card-container {
+	padding-bottom: 30px;
+}
+
+
+/* ----------------------------------------Breweries near you/map page */
+
+#panel {
+	height: 100%;
+	width: null;
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: all 0.2s ease-out;
+}
+
+.open {
+	width: 250px;
+}
+
+
+/* Styling for place details */
+
+.hero {
+	width: 100%;
+	height: auto;
+	max-height: 166px;
+	display: block;
+}
+
+.place,
+p {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.details {
+	color: darkslategrey;
+}
+
+#pannel,
+a {
+	text-decoration: none;
+	color: cadetblue;
+}
+
+
+/* ----------------------------------------Maps */
+
+#breweries-map {
+	height: 100vh;
+	border: 1px solid black;
+	width: 100%;
+}
+
+#map {
+	height: 630px;
+	border: 1px solid red;
+	padding: 10px;
+	width: 70%;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+
+/* ----------------------------------------Cards */
+
+.card-text {
+	text-align: center;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+p.card-text a {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+p.card-text a:hover {
+	color: red;
+	transition: 1ms;
+}
+
+.card-breweries-near {
+	box-shadow: 10px 10px 20px 10px black;
+}
+
+.card-london {
+	box-shadow: 10px 10px 20px 10px yellow;
+}
+
+.card-manchester {
+	box-shadow: 10px 10px 20px 10px red;
+}
+
+.card-liverpool {
+	box-shadow: 10px 10px 20px 10px blue;
+}
+
+.card-offering {
+	box-shadow: 5px 5px 10px 5px #95a78d;
+}
+
+.logo-card {
+	box-shadow: 5px 5px 10px 5px black;
+	background-color: #0e9594;
+}
+
+.card-offering-text {
+	height: 80px;
+	font-size: 25px
+}
+
+.class-offering-img {
+	height: 210px;
+}
+
+
+/* ----------------------------------------Headings */
+
+.landing-heading {
+	margin-top: 8rem;
+	font-size: 9rem;
+	color: black;
+	-webkit-text-fill-color: white;
+	/* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.cities-heading,
+.barhop-heading {
+	text-align: center;
+	font-size: 65px;
+}
+
+.breweries-near-heading {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.about-heading {
+	text-align: center;
+	font-size: 60px;
+	padding: 10px;
+}
+
+.jumbotron-cities {
+	background-color: rgba(235, 10, 10, 0.5);
+}
+
+.jumbotron-barhop {
+	background-color: #fed715;
+}
+
+.manchester-container {
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+
+/* ----------------------------------------Cities/Map pages */
+
+.cities-container {
+	padding-bottom: 50px;
+}
+
+.city-map-heading {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+#right-panel {
+	line-height: 30px;
+	padding-left: 10px;
+}
+
+#right-panel select,
+#right-panel input {
+	font-size: 20px;
+}
+
+#right-panel select {
+	width: 100%;
+}
+
+#right-panel i {
+	font-size: 18px;
+}
+
+#right-panel {
+	margin: 20px;
+	border-width: 2px;
+	width: 20%;
+	height: 400px;
+	float: left;
+	text-align: left;
+	padding-top: 0;
+	z-index: 3;
+}
+
+#directions-panel {
+	margin-top: 10px;
+	padding: 10px;
+	overflow: scroll;
+	height: 250px;
+	width: 250px;
+	border: 2px solid black;
+}
+
+#start {
+	background-color: #48a4d6;
+	color: white;
+	border: 1px solid black;
+}
+
+#end {
+	background-color: #48a4d6;
+	color: white;
+	border: 1px solid black;
+}
+
+#waypoints {
+	background-color: #48a4d6;
+	color: white;
+}
+
+input#submit {
+	background-color: #eb190d;
+	color: white;
+}
+
+
+/* ----------------------------------------Modal */
+
+.modal-header {
+	font-size: 50px;
+	color: red;
+}
+
+.fullname {
+	padding-top: 20px;
+}
+
+input#emailaddress {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+input#fullname {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.btn-signup {
+	width: 10rem;
+	background-color: red;
+}
+
+.btn-signup:hover {
+	background-color: black;
+}
+
+.modal-body {
+	box-shadow: 5px 5px 5px 5px #790604;
+}
+
+input#fullname.form-control {
+	color: red;
+}
+
+
+/* ----------------------------------------Newsletter */
+
+.newsletter-container {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+a .newsletter {
+	font-size: 50px;
+	color: red;
+}
+
+.fa-newspaper {
+	color: black;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+.newsletter {
+	transition: transform 100ms ease-in-out;
+	transform: scale(0.5);
+}
+
+.newsletter:hover {
+	transform: scale(1);
+}
+
 
 /* ----------------------------------------Footer */
 
 .footer {
-  width: 100%;
-  bottom: 0px;
-  height: 70px;
-  background-color: #0e9594;
-  border: 2px black solid;
-
-
-}
-
-.newsletter-container {
-  padding-top: 50px;
-  padding-bottom: 25px;
-}
-
-.barhop-container {
-  text-align: center;
-  padding-bottom: 2rem;
+	width: 100%;
+	bottom: 0px;
+	height: 70px;
+	background-color: #0e9594;
+	border: 2px black solid;
 }
 
 .social-links li a i {
-  color: white;
-  padding-top: 1rem;
-  padding: 20px;
-  height: 20px;
-  width: 20px;
+	color: white;
+	padding-top: 1rem;
+	padding: 20px;
+	height: 20px;
+	width: 20px;
 }
 
 .social-links li a i:hover {
-  color: #3498db;
-  transition: 1s;
-}
-
-/* ---------------------------------------What we offer cards */
-
-
-a.button1 {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid black;
-    border-radius: 0.12em;
-    margin:0 0.3em 0.3em 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.2s;
-
-}
-
-a.button1:hover {
-    color: white;
-    background-color: black;
-}
-
-@media all and (max-width:30em) {
-    a.buttton1 {
-        display: block;
-        margin: 0.4em auto;
-    }
+	color: #3498db;
+	transition: 500ms;
 }
 
 
+/* --------------------------------------- Bar hop / what we offer cards */
+
+.barhop-container {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+
+/* ---------------------------------------Bar hop / What we offer cards */
 
 .card-title {
-  text-align: center;
+	text-align: center;
 }
 
 .bar-hop-footer {
-  height: 15rem;
+	height: 15rem;
 }
 
+
+/* ---------------------------------------Scicerone button */
+
+a.scicerone-button {
+	display: inline-block;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid black;
+	border-radius: .12em;
+	margin: 0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+a.scicerone-button:hover {
+	color: white;
+	background-color: black;
+}
+
+@media all and (max-width:30em) {
+	a.scicerone-button {
+		display: block;
+		margin: 0.4em auto;
+	}
+}
+
+
 /* ---------------------------------------Media Queries */
+
+
 /* ------------------Mobile */
+
 @media (max-width: 767px) {
-  .card-breweries-near {
-    width: 15rem;
-  }
-
-  #People-drinking {
-    display: none;
-  }
-
-  #beer-bottles {
-    display: none;
-  }
-
-  a.nav-link {
-    text-align: center;
-  }
-
-  .logo {
-    text-align: center;
-   
-  }
-
-  #beer-pic {
-    display: none;
-  }
-
-  .overlay-image {
-    display: none;
-  }
-
-  #directions-panel {
-    width: 100% !important;
-    margin-bottom: 5rem !important;
-    height: 200px;
-  }
-
-  #right-panel select,
-  #right-panel input {
-    font-size: 20px;
-  }
-
-  #right-panel {
-    width: 100% !important;
-    padding-right: 3rem;
-  }
-
-  #map {
-    height: 340px;
-    border: 1px solid red;
-    padding: 10px;
-    width: 100% !important;
-    text-align: center;
-    position: relative;
-    float: left;
-  }
-
-  .fa-newspaper {
-    color: black;
-    padding-left: 0;
-    padding-right: 10px;
-  }
+	.card-breweries-near {
+		width: 15rem;
+	}
+	#People-drinking {
+		display: none;
+	}
+	#beer-bottles {
+		display: none;
+	}
+	a.nav-link {
+		text-align: center;
+	}
+	.logo {
+		text-align: center;
+	}
+	#beer-pic {
+		display: none;
+	}
+	#directions-panel {
+		width: 100% !important;
+		margin-bottom: 5rem !important;
+		height: 200px;
+	}
+	#right-panel select,
+	#right-panel input {
+		font-size: 20px;
+	}
+	#right-panel {
+		width: 100% !important;
+		padding-right: 3rem;
+	}
+	#map {
+		height: 340px;
+		border: 1px solid red;
+		padding: 10px;
+		width: 100% !important;
+		text-align: center;
+		position: relative;
+		float: left;
+	}
+	.fa-newspaper {
+		color: black;
+		padding-left: 0;
+		padding-right: 10px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-  .card-breweries-near {
-    box-shadow: none;
-    border: 3px solid black;
-  }
-
-  /* I found the box shadow blended to much on smaller devices so I changed the shadow to a border of the same colour */
-
-  .card-london {
-    box-shadow: none;
-    border: 3px solid yellow;
-  }
-
-  .card-manchester {
-    box-shadow: none;
-    border: 3px solid red;
-  }
-
-  .card-liverpool {
-    box-shadow: none;
-    border: 3px solid blue;
-  }
+	.card-breweries-near {
+		box-shadow: none;
+		border: 3px solid black;
+	}
+	/* I found the box shadow blended to much on smaller devices so I changed the shadow to a border of the same colour */
+	.card-london {
+		box-shadow: none;
+		border: 3px solid yellow;
+	}
+	.card-manchester {
+		box-shadow: none;
+		border: 3px solid red;
+	}
+	.card-liverpool {
+		box-shadow: none;
+		border: 3px solid blue;
+	}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1025px) {
-  #People-drinking {
-    display: none;
-  }
-
-  #beer-bottles {
-    display: none;
-  }
-
-  #directions-panel {
-    width: 100% !important;
-    margin-bottom: 5rem !important;
-    height: 300px;
-  }
-
-  #right-panel select,
-  #right-panel input {
-    font-size: 25px;
-  }
-
-  #right-panel {
-    width: 100% !important;
-    padding-right: 3rem;
-  }
-
-  #map {
-    height: 440px;
-    border: 1px solid red;
-    padding: 10px;
-    width: 100% !important;
-    text-align: center;
-    position: relative;
-    float: left;
-  }
+	#People-drinking {
+		display: none;
+	}
+	#beer-bottles {
+		display: none;
+	}
+	#directions-panel {
+		width: 100% !important;
+		margin-bottom: 5rem !important;
+		height: 300px;
+	}
+	#right-panel select,
+	#right-panel input {
+		font-size: 25px;
+	}
+	#right-panel {
+		width: 100% !important;
+		padding-right: 3rem;
+	}
+	#map {
+		height: 440px;
+		border: 1px solid red;
+		padding: 10px;
+		width: 100% !important;
+		text-align: center;
+		position: relative;
+		float: left;
+	}
 }
-
-
-
